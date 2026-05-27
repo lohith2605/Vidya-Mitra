@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    localStorage.setItem("vidya_user_logged_in", "true");
+    navigate("/privatehome");
+  };
+
   return (
     <div className="auth-page">
       <div className="auth-container register-container">
@@ -8,7 +16,7 @@ const Register = () => {
         {/* REGISTER FORM */}
         <div className="left-form">
 
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
 
             <h1>Registration</h1>
 

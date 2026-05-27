@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    localStorage.setItem("vidya_user_logged_in", "true");
+    navigate("/privatehome");
+  };
+
   return (
     <div className="auth-page">
       <div className="auth-container">
@@ -20,7 +28,7 @@ const Login = () => {
 
         {/* LOGIN FORM */}
         <div className="right-panel">
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
 
             <h1>Login</h1>
 

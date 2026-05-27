@@ -1,0 +1,140 @@
+import { useNavigate } from "react-router-dom";
+
+function PrivateNavbar() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("vidya_user_logged_in");
+    navigate("/login");
+  };
+
+  return (
+    <header
+      style={{
+        width: "100%",
+        padding: "1rem 2rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        gap: "1rem",
+        position: "sticky",
+        top: 0,
+        background: "rgba(255,255,255,0.85)",
+        backdropFilter: "blur(18px)",
+        boxShadow: "0 20px 60px rgba(15,23,42,0.08)",
+        zIndex: 20,
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+        <div
+          style={{
+            width: "44px",
+            height: "44px",
+            borderRadius: "14px",
+            background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+            display: "grid",
+            placeItems: "center",
+            color: "#fff",
+            fontWeight: 700,
+            boxShadow: "0 10px 25px rgba(99,102,241,0.22)",
+          }}
+        >
+          V
+        </div>
+        <div>
+          <div style={{ fontSize: "1rem", fontWeight: 700 }}>VidyaMitra</div>
+          <div style={{ fontSize: "0.8rem", color: "#6b7280" }}>Student success hub</div>
+        </div>
+      </div>
+
+      <div
+        style={{
+          flex: 1,
+          maxWidth: "520px",
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            alignItems: "center",
+            gap: "0.75rem",
+            padding: "0.85rem 1rem",
+            borderRadius: "999px",
+            border: "1px solid rgba(99,102,241,0.18)",
+            background: "rgba(255,255,255,0.95)",
+            boxShadow: "0 10px 30px rgba(99,102,241,0.08)",
+          }}
+        >
+          <span
+            style={{
+              display: "grid",
+              placeItems: "center",
+              width: "42px",
+              height: "42px",
+              borderRadius: "50%",
+              background: "rgba(99,102,241,0.12)",
+              color: "#6366f1",
+              fontSize: "1.1rem",
+            }}
+          >
+            🔍
+          </span>
+          <input
+            type="search"
+            placeholder="Search colleges, career paths, mentors..."
+            style={{
+              flex: 1,
+              border: "none",
+              outline: "none",
+              background: "transparent",
+              fontSize: "0.95rem",
+              color: "#111827",
+            }}
+          />
+        </div>
+      </div>
+
+      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+        <button
+          type="button"
+          onClick={handleLogout}
+          style={{
+            padding: "0.85rem 1.15rem",
+            borderRadius: "999px",
+            border: "none",
+            background: "linear-gradient(135deg, #8b5cf6, #6366f1)",
+            color: "#fff",
+            fontWeight: 700,
+            cursor: "pointer",
+          }}
+        >
+          Logout
+        </button>
+        <button
+          type="button"
+          style={{
+            width: "52px",
+            height: "52px",
+            borderRadius: "50%",
+            border: "1px solid rgba(99,102,241,0.18)",
+            background: "rgba(99,102,241,0.1)",
+            color: "#3730a3",
+            fontSize: "1.1rem",
+            cursor: "pointer",
+            display: "grid",
+            placeItems: "center",
+          }}
+        >
+          👤
+        </button>
+      </div>
+    </header>
+  );
+}
+
+export default PrivateNavbar;
