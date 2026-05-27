@@ -2,96 +2,307 @@ import { useNavigate } from "react-router-dom";
 import PublicNavbar from "../components/PublicNavbar";
 
 function PublicHome() {
+
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen font-[Inter] bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-100">
-      
+
+    <div
+      style={{
+        minHeight: "100vh",
+        width: "100%",
+        background:
+          "linear-gradient(135deg, #f8fafc, #eef2ff, #ede9fe)",
+        display: "flex",
+        flexDirection: "column",
+        overflowY: "auto",
+        overflowX: "hidden",
+        fontFamily: "Inter, sans-serif",
+      }}
+    >
+
+      {/* NAVBAR */}
       <PublicNavbar />
 
-      <div className="container text-center py-5">
-        
-        {/* HERO */}
-        <h1 className="display-4 fw-bold text-5xl md:text-6xl tracking-tight bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-500 text-transparent bg-clip-text">
-          Welcome to VidyaMitra 🎓
-        </h1>
+      {/* MAIN CONTENT */}
+      <div
+        className="container"
+        style={{
+          flex: 1,
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
+        }}
+      >
 
-        <p className="lead mt-3 text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-          Your smart career guidance platform helping students
-          choose the right path and build a successful future.
-        </p>
+        {/* HERO SECTION */}
+        <div
+          className="text-center"
+          style={{
+            animation: "fadeIn 1s ease",
+          }}
+        >
 
-        <div className="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-          <button
-            className="btn btn-primary btn-lg px-4 py-2 rounded-pill shadow-lg"
+          {/* TITLE */}
+          <h1
+            className="fw-bold"
             style={{
-              background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-              border: "none",
-              boxShadow: "0 8px 20px rgba(99,102,241,0.3)"
+              fontSize: "4rem",
+              lineHeight: "1.1",
+              background:
+                "linear-gradient(135deg,#4f46e5,#7c3aed,#3b82f6)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
             }}
-            onClick={() => navigate("/login")}
           >
-            Get Started
-          </button>
+            Welcome to VidyaMitra 🎓
+          </h1>
 
-          <button
-            className="btn btn-outline-secondary btn-lg px-4 py-2 rounded-pill bg-white/70 backdrop-blur-md"
-            onClick={() => navigate("/about")}
+          {/* DESCRIPTION */}
+          <p
+            className="lead mt-3 mx-auto"
+            style={{
+              maxWidth: "700px",
+              color: "#6b7280",
+              fontSize: "1.1rem",
+              lineHeight: "1.8",
+            }}
           >
-            Learn More
-          </button>
+            Your smart career guidance platform helping students
+            choose the right path and build a successful future.
+          </p>
+
+          {/* BUTTONS */}
+          <div
+            className="mt-4 d-flex justify-content-center align-items-center gap-2 flex-nowrap"
+          >
+
+            {/* GET STARTED */}
+            <button
+              className="btn"
+              style={{
+                background:
+                  "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                border: "none",
+                color: "#fff",
+                padding: "5px 16px",
+                fontSize: "12px",
+                fontWeight: "600",
+                borderRadius: "50px",
+                boxShadow:
+                  "0 4px 10px rgba(99,102,241,0.22)",
+                transition: "0.3s ease",
+                whiteSpace: "nowrap",
+              }}
+              onClick={() => navigate("/login")}
+              onMouseOver={(e) => {
+                e.target.style.transform = "translateY(-2px)";
+              }}
+              onMouseOut={(e) => {
+                e.target.style.transform = "translateY(0px)";
+              }}
+            >
+              Get Started
+            </button>
+
+            {/* LEARN MORE */}
+            <button
+              className="btn"
+              style={{
+                background: "#fff",
+                color: "#6366f1",
+                border: "1px solid #c7d2fe",
+                padding: "5px 16px",
+                fontSize: "12px",
+                fontWeight: "600",
+                borderRadius: "50px",
+                boxShadow:
+                  "0 4px 10px rgba(0,0,0,0.05)",
+                transition: "0.3s ease",
+                whiteSpace: "nowrap",
+              }}
+              onClick={() => navigate("/about")}
+              onMouseOver={(e) => {
+                e.target.style.transform = "translateY(-2px)";
+                e.target.style.background = "#eef2ff";
+              }}
+              onMouseOut={(e) => {
+                e.target.style.transform = "translateY(0px)";
+                e.target.style.background = "#fff";
+              }}
+            >
+              Learn More
+            </button>
+
+          </div>
+
         </div>
 
-        {/* CARDS */}
-        <div className="row mt-5 g-4">
+        {/* FEATURE CARDS */}
+        <div
+          className="mt-5 d-flex gap-4 pb-3"
+          style={{
+            overflowX: "auto",
+            overflowY: "hidden",
+            scrollBehavior: "smooth",
+            paddingBottom: "10px",
+          }}
+        >
 
           {[
             {
               title: "Career Guidance",
               desc: "Discover the best career options based on your interests and skills.",
+              icon: "🎯",
             },
             {
               title: "Roadmaps",
               desc: "Follow structured paths to achieve your goals.",
+              icon: "🛣️",
             },
             {
               title: "Colleges",
               desc: "Explore top colleges and universities.",
+              icon: "🏫",
             },
             {
               title: "Quiz",
               desc: "Test your knowledge and discover your strengths.",
+              icon: "🧠",
             },
             {
               title: "Recommendations",
               desc: "Get personalized suggestions for your career path.",
+              icon: "✨",
+            },
+            {
+              title: "AI Mentor",
+              desc: "Receive AI-powered guidance and career support.",
+              icon: "🤖",
             },
           ].map((item, i) => (
-            <div className="col-md-4" key={i}>
+
+            <div
+              key={i}
+              style={{
+                minWidth: "300px",
+                maxWidth: "300px",
+                borderRadius: "20px",
+                background: "rgba(255,255,255,0.6)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255,255,255,0.4)",
+                boxShadow:
+                  "0 10px 25px rgba(0,0,0,0.08)",
+                padding: "30px",
+                transition: "0.3s ease",
+                cursor: "pointer",
+                animation: "cardFade 1s ease",
+                flexShrink: 0,
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform =
+                  "translateY(-8px)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform =
+                  "translateY(0px)";
+              }}
+            >
+
+              {/* ICON */}
               <div
-                className="card p-4 h-100"
                 style={{
-                  borderRadius: "16px",
-                  background: "rgba(255,255,255,0.6)",
-                  backdropFilter: "blur(10px)",
-                  border: "1px solid rgba(255,255,255,0.4)",
-                  boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
-                  transition: "0.3s"
+                  fontSize: "2.5rem",
+                  marginBottom: "15px",
                 }}
               >
-                <h5 className="fw-bold text-indigo-600">
-                  {item.title}
-                </h5>
-
-                <p className="mt-2 text-gray-600">
-                  {item.desc}
-                </p>
+                {item.icon}
               </div>
+
+              {/* TITLE */}
+              <h4
+                className="fw-bold"
+                style={{
+                  color: "#4f46e5",
+                  marginBottom: "15px",
+                }}
+              >
+                {item.title}
+              </h4>
+
+              {/* DESCRIPTION */}
+              <p
+                style={{
+                  color: "#6b7280",
+                  lineHeight: "1.7",
+                  marginBottom: 0,
+                }}
+              >
+                {item.desc}
+              </p>
+
             </div>
+
           ))}
 
         </div>
+
       </div>
+
+      {/* ANIMATIONS */}
+      <style>
+        {`
+
+        @keyframes fadeIn{
+          from{
+            opacity:0;
+            transform:translateY(40px);
+          }
+          to{
+            opacity:1;
+            transform:translateY(0px);
+          }
+        }
+
+        @keyframes cardFade{
+          from{
+            opacity:0;
+            transform:translateY(20px);
+          }
+          to{
+            opacity:1;
+            transform:translateY(0px);
+          }
+        }
+
+        /* SCROLLBAR */
+
+        ::-webkit-scrollbar{
+          height:6px;
+          width:6px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+          background:#c7d2fe;
+          border-radius:10px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:768px){
+
+          h1{
+            font-size:2.5rem !important;
+          }
+
+          .lead{
+            font-size:1rem !important;
+          }
+
+        }
+
+        `}
+      </style>
+
     </div>
   );
 }

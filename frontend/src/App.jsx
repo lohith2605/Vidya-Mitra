@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// App.jsx
+
+import { Routes, Route } from "react-router-dom";
 
 import PublicHome from "./pages/PublicHome";
 import Login from "./pages/Login";
@@ -7,14 +9,21 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<PublicHome />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+
+      {/* HOME PAGE */}
+      <Route path="/" element={<PublicHome />} />
+
+      {/* LOGIN PAGE */}
+      <Route path="/login" element={<Login />} />
+
+      {/* REGISTER PAGE */}
+      <Route path="/register" element={<Register />} />
+
+      {/* ABOUT PAGE */}
+      <Route path="/about" element={<About />} />
+
+    </Routes>
   );
 }
 

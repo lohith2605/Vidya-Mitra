@@ -1,10 +1,66 @@
-function Register() {
+import { Link } from "react-router-dom";
+
+const Register = () => {
   return (
-    <div className="container py-5">
-      <h2>Register</h2>
-      <p>Create your account to get started with VidyaMitra.</p>
+    <div className="auth-page">
+      <div className="auth-container register-container">
+
+        {/* REGISTER FORM */}
+        <div className="left-form">
+
+          <form className="form">
+
+            <h1>Registration</h1>
+
+            <div className="input-box">
+              <input type="text" placeholder="Username" required />
+              <span>👤</span>
+            </div>
+
+            <div className="input-box">
+              <input type="email" placeholder="Email" required />
+              <span>📧</span>
+            </div>
+
+            <div className="input-box">
+              <input type="password" placeholder="Password" required />
+              <span>🔒</span>
+            </div>
+
+            <button type="submit" className="btn">
+              Register
+            </button>
+
+            <p>or register with social platforms</p>
+
+            <div className="social-icons">
+              <a href="#">G</a>
+              <a href="#">F</a>
+              <a href="#">X</a>
+              <a href="#">in</a>
+            </div>
+
+          </form>
+
+        </div>
+
+        {/* RIGHT PANEL */}
+        <div className="right-side">
+
+          <h1>Welcome Back!</h1>
+
+          <p>Already have an account?</p>
+
+          <Link to="/">
+            <button className="switch-btn">
+              Login
+            </button>
+          </Link>
+
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Register;
