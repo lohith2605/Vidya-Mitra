@@ -1,5 +1,3 @@
-// App.jsx
-
 import { Routes, Route } from "react-router-dom";
 
 import PublicHome from "./pages/PublicHome";

@@ -2,307 +2,238 @@ import { useNavigate } from "react-router-dom";
 import PublicNavbar from "../components/PublicNavbar";
 
 function PublicHome() {
-
   const navigate = useNavigate();
-
   return (
-
     <div
       style={{
         minHeight: "100vh",
         width: "100%",
-        background:
-          "linear-gradient(135deg, #f8fafc, #eef2ff, #ede9fe)",
-        display: "flex",
-        flexDirection: "column",
-        overflowY: "auto",
-        overflowX: "hidden",
+        background: "linear-gradient(135deg, #eef2ff, #f8fafc, #ede9fe)",
         fontFamily: "Inter, sans-serif",
+        color: "#111827",
       }}
     >
-
-      {/* NAVBAR */}
       <PublicNavbar />
 
-      {/* MAIN CONTENT */}
-      <div
-        className="container"
+      <main
         style={{
-          flex: 1,
-          paddingTop: "4rem",
-          paddingBottom: "4rem",
+          maxWidth: "1180px",
+          margin: "0 auto",
+          padding: "3rem 2rem 4rem",
         }}
       >
-
-        {/* HERO SECTION */}
-        <div
-          className="text-center"
+        <section
           style={{
-            animation: "fadeIn 1s ease",
+            display: "grid",
+            gridTemplateColumns: "1.2fr 0.8fr",
+            gap: "2rem",
+            alignItems: "center",
           }}
         >
-
-          {/* TITLE */}
-          <h1
-            className="fw-bold"
-            style={{
-              fontSize: "4rem",
-              lineHeight: "1.1",
-              background:
-                "linear-gradient(135deg,#4f46e5,#7c3aed,#3b82f6)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Welcome to VidyaMitra 🎓
-          </h1>
-
-          {/* DESCRIPTION */}
-          <p
-            className="lead mt-3 mx-auto"
-            style={{
-              maxWidth: "700px",
-              color: "#6b7280",
-              fontSize: "1.1rem",
-              lineHeight: "1.8",
-            }}
-          >
-            Your smart career guidance platform helping students
-            choose the right path and build a successful future.
-          </p>
-
-          {/* BUTTONS */}
-          <div
-            className="mt-4 d-flex justify-content-center align-items-center gap-2 flex-nowrap"
-          >
-
-            {/* GET STARTED */}
-            <button
-              className="btn"
+          <div>
+            <p
               style={{
-                background:
-                  "linear-gradient(135deg, #6366f1, #8b5cf6)",
-                border: "none",
-                color: "#fff",
-                padding: "5px 16px",
-                fontSize: "12px",
-                fontWeight: "600",
-                borderRadius: "50px",
-                boxShadow:
-                  "0 4px 10px rgba(99,102,241,0.22)",
-                transition: "0.3s ease",
-                whiteSpace: "nowrap",
-              }}
-              onClick={() => navigate("/login")}
-              onMouseOver={(e) => {
-                e.target.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.target.style.transform = "translateY(0px)";
+                marginBottom: "1rem",
+                color: "#4f46e5",
+                fontWeight: 700,
+                letterSpacing: "0.08em",
               }}
             >
-              Get Started
-            </button>
-
-            {/* LEARN MORE */}
-            <button
-              className="btn"
+             
+            </p>
+            <h1
               style={{
-                background: "#fff",
-                color: "#6366f1",
-                border: "1px solid #c7d2fe",
-                padding: "5px 16px",
-                fontSize: "12px",
-                fontWeight: "600",
-                borderRadius: "50px",
-                boxShadow:
-                  "0 4px 10px rgba(0,0,0,0.05)",
-                transition: "0.3s ease",
-                whiteSpace: "nowrap",
-              }}
-              onClick={() => navigate("/about")}
-              onMouseOver={(e) => {
-                e.target.style.transform = "translateY(-2px)";
-                e.target.style.background = "#eef2ff";
-              }}
-              onMouseOut={(e) => {
-                e.target.style.transform = "translateY(0px)";
-                e.target.style.background = "#fff";
+                fontSize: "clamp(2.75rem, 4vw, 4.5rem)",
+                lineHeight: 1.05,
+                marginBottom: "1.25rem",
+                background: "linear-gradient(135deg,#4f46e5,#7c3aed,#3b82f6)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
               }}
             >
-              Learn More
-            </button>
+              Your personalized learning command center.
+            </h1>
+            <p
+              style={{
+                maxWidth: "640px",
+                color: "#4b5563",
+                fontSize: "1.05rem",
+                lineHeight: 1.9,
+                marginBottom: "2rem",
+              }}
+            >
+              Manage your career planning, explore college matches, launch quizzes,
+              and monitor progress. All in one place.
+            </p>
 
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+              {[
+                { label: "Explore Colleges", variant: "primary", action: () => navigate("/colleges") },
+                { label: "Start Quiz", variant: "secondary", action: () => navigate("/quiz") },
+                { label: "View Roadmaps", variant: "ghost", action: () => navigate("/roadmaps") },
+                
+              ].map((button) => (
+                <button
+                  key={button.label}
+                  onClick={button.action}
+                  onMouseEnter={(e) => {
+                    e.target.style.transform = "translateY(-4px) scale(1.02)";
+                    e.target.style.boxShadow = button.variant === "ghost" 
+                      ? "0 20px 40px rgba(99,102,241,0.15)" 
+                      : "0 20px 50px rgba(99,102,241,0.25)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.transform = "translateY(0) scale(1)";
+                    e.target.style.boxShadow = button.variant === "ghost"
+                      ? "0 10px 28px rgba(99,102,241,0.06)"
+                      : "0 10px 25px rgba(99,102,241,0.16)";
+                  }}
+                  style={{
+                    minWidth: "170px",
+                    padding: "0.95rem 1.2rem",
+                    borderRadius: "999px",
+                    border: button.variant === "ghost" ? "1px solid rgba(99,102,241,0.2)" : "none",
+                    background:
+                      button.variant === "secondary"
+                        ? "linear-gradient(135deg, rgba(238,242,255,0.9), rgba(238,242,255,1))"
+                        : button.variant === "ghost"
+                        ? "linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,1))"
+                        : "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                    color: button.variant === "secondary" || button.variant === "ghost" ? "#3730a3" : "#fff",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                    boxShadow:
+                      button.variant === "ghost"
+                        ? "0 10px 28px rgba(99,102,241,0.06)"
+                        : "0 10px 25px rgba(99,102,241,0.16)",
+                    transition: "all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1)",
+                    fontSize: "1rem",
+                    letterSpacing: "0.5px",
+                    textTransform: "none",
+                    backdropFilter: "blur(10px)",
+                  }}
+                >
+                  {button.label}
+                </button>
+              ))}
+            </div>
           </div>
 
-        </div>
-
-        {/* FEATURE CARDS */}
-        <div
-          className="mt-5 d-flex gap-4 pb-3"
-          style={{
-            overflowX: "auto",
-            overflowY: "hidden",
-            scrollBehavior: "smooth",
-            paddingBottom: "10px",
-          }}
-        >
-
-          {[
-            {
-              title: "Career Guidance",
-              desc: "Discover the best career options based on your interests and skills.",
-              icon: "🎯",
-            },
-            {
-              title: "Roadmaps",
-              desc: "Follow structured paths to achieve your goals.",
-              icon: "🛣️",
-            },
-            {
-              title: "Colleges",
-              desc: "Explore top colleges and universities.",
-              icon: "🏫",
-            },
-            {
-              title: "Quiz",
-              desc: "Test your knowledge and discover your strengths.",
-              icon: "🧠",
-            },
-            {
-              title: "Recommendations",
-              desc: "Get personalized suggestions for your career path.",
-              icon: "✨",
-            },
-            {
-              title: "AI Mentor",
-              desc: "Receive AI-powered guidance and career support.",
-              icon: "🤖",
-            },
-          ].map((item, i) => (
-
-            <div
-              key={i}
+          <div
+            style={{
+              background: "rgba(255,255,255,0.8)",
+              borderRadius: "30px",
+              padding: "2.25rem",
+              boxShadow: "0 30px 80px rgba(15,23,42,0.08)",
+              border: "1px solid rgba(148,163,184,0.18)",
+              backdropFilter: "blur(18px)",
+            }}
+          >
+            <p
               style={{
-                minWidth: "300px",
-                maxWidth: "300px",
-                borderRadius: "20px",
-                background: "rgba(255,255,255,0.6)",
-                backdropFilter: "blur(10px)",
-                border: "1px solid rgba(255,255,255,0.4)",
-                boxShadow:
-                  "0 10px 25px rgba(0,0,0,0.08)",
-                padding: "30px",
-                transition: "0.3s ease",
-                cursor: "pointer",
-                animation: "cardFade 1s ease",
-                flexShrink: 0,
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.transform =
-                  "translateY(-8px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.transform =
-                  "translateY(0px)";
+                marginBottom: "1rem",
+                color: "#6b7280",
+                fontWeight: 700,
               }}
             >
-
-              {/* ICON */}
-              <div
-                style={{
-                  fontSize: "2.5rem",
-                  marginBottom: "15px",
-                }}
-              >
-                {item.icon}
-              </div>
-
-              {/* TITLE */}
-              <h4
-                className="fw-bold"
-                style={{
-                  color: "#4f46e5",
-                  marginBottom: "15px",
-                }}
-              >
-                {item.title}
-              </h4>
-
-              {/* DESCRIPTION */}
-              <p
-                style={{
-                  color: "#6b7280",
-                  lineHeight: "1.7",
-                  marginBottom: 0,
-                }}
-              >
-                {item.desc}
-              </p>
-
+              Quick actions
+            </p>
+            <div style={{ display: "grid", gap: "1rem" }}>
+              {[
+                {
+                  title: "College Match",
+                  subtitle: "See top institutions tailored for your profile.",
+                  accent: "#c7d2fe",
+                },
+                {
+                  title: "Skill Assessment",
+                  subtitle: "Complete a short quiz to find your strengths.",
+                  accent: "#d8b4fe",
+                },
+                {
+                  title: "Mentor Connect",
+                  subtitle: "Chat with career advisors and AI mentors.",
+                  accent: "#bfdbfe",
+                },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  style={{
+                    padding: "1.2rem",
+                    borderRadius: "24px",
+                    background: "rgba(255,255,255,0.92)",
+                    border: `1px solid ${item.accent}`,
+                  }}
+                >
+                  <p style={{ color: "#3730a3", fontWeight: 700, marginBottom: "0.5rem" }}>
+                    {item.title}
+                  </p>
+                  <p style={{ margin: 0, color: "#6b7280", lineHeight: 1.7 }}>
+                    {item.subtitle}
+                  </p>
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
 
-          ))}
-
-        </div>
-
-      </div>
-
-      {/* ANIMATIONS */}
-      <style>
-        {`
-
-        @keyframes fadeIn{
-          from{
-            opacity:0;
-            transform:translateY(40px);
-          }
-          to{
-            opacity:1;
-            transform:translateY(0px);
-          }
-        }
-
-        @keyframes cardFade{
-          from{
-            opacity:0;
-            transform:translateY(20px);
-          }
-          to{
-            opacity:1;
-            transform:translateY(0px);
-          }
-        }
-
-        /* SCROLLBAR */
-
-        ::-webkit-scrollbar{
-          height:6px;
-          width:6px;
-        }
-
-        ::-webkit-scrollbar-thumb{
-          background:#c7d2fe;
-          border-radius:10px;
-        }
-
-        /* MOBILE */
-
-        @media(max-width:768px){
-
-          h1{
-            font-size:2.5rem !important;
-          }
-
-          .lead{
-            font-size:1rem !important;
-          }
-
-        }
-
-        `}
-      </style>
-
+        <section style={{ marginTop: "3rem" }}>
+          <div
+            style={{
+              display: "grid",
+              gap: "1.25rem",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+            }}
+          >
+            {[
+              {
+                title: "Personalized Roadmaps",
+                desc: "Track your progress with tailored steps and milestones.",
+                icon: "🛣️",
+              },
+              {
+                title: "College Insights",
+                desc: "Compare programs, fees, and placement data quickly.",
+                icon: "🏫",
+              },
+              {
+                title: "Mentor Sessions",
+                desc: "Book guidance sessions with subject experts.",
+                icon: "💬",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                style={{
+                  padding: "2rem",
+                  borderRadius: "24px",
+                  background: "rgba(255,255,255,0.95)",
+                  border: "1px solid rgba(148,163,184,0.16)",
+                  boxShadow: "0 20px 45px rgba(15,23,42,0.08)",
+                }}
+              >
+                <span
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "48px",
+                    height: "48px",
+                    borderRadius: "16px",
+                    background: "rgba(99,102,241,0.12)",
+                    fontSize: "1.5rem",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {card.icon}
+                </span>
+                <h3 style={{ margin: 0, marginBottom: "0.75rem", color: "#1f2937" }}>{card.title}</h3>
+                <p style={{ margin: 0, color: "#4b5563", lineHeight: 1.8 }}>{card.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
