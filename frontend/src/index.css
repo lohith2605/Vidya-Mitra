@@ -1,3 +1,64 @@
 body {
   background: linear-gradient(135deg, #eef2ff, #dbeafe);
 }
+
+/* Premium Animated Gradient for Roadmaps Hero Title */
+@keyframes premiumGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.premium-hero-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.25rem, 6vw, 4rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.03em !important;
+  /* Premium combination: Deep Purple, Electric Blue, Sky Blue, and Soft Violet */
+  background: linear-gradient(135deg, #7c3aed, #3b82f6, #06b6d4, #8b5cf6, #6366f1) !important;
+  background-size: 300% 300% !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: premiumGradientMove 8s ease infinite !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  /* Premium drop shadow glow */
+  filter: drop-shadow(0 2px 10px rgba(124, 58, 237, 0.15)) !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.premium-hero-heading:hover {
+  transform: scale(1.015) !important;
+  filter: drop-shadow(0 4px 20px rgba(99, 102, 241, 0.35)) !important;
+}
+
+/* Premium Styling for VIDYAMITRA COMPASS Badge */
+.premium-compass-badge {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(6, 182, 212, 0.08)) !important;
+  border: 1px solid rgba(124, 58, 237, 0.25) !important;
+  color: #7c3aed !important;
+  padding: 0.6rem 1.4rem !important;
+  border-radius: 50px !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.06) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: inline-block !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.premium-compass-badge:hover {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(6, 182, 212, 0.15)) !important;
+  border-color: #3b82f6 !important;
+  color: #3b82f6 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15) !important;
+}

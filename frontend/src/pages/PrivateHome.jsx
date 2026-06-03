@@ -1,9 +1,15 @@
-﻿import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import PrivateNavbar from "../components/PrivateNavbar";
 
 function PrivateHome() {
-
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("vidya_user_logged_in") !== "true") {
+      navigate("/login");
+    }
+  }, [navigate]);
 
   return (
 
@@ -73,7 +79,7 @@ function PrivateHome() {
             className="mt-4 d-flex justify-content-center align-items-center gap-2 flex-nowrap"
           >
 
-            {/* GET STARTED */}
+            {/* START QUIZ */}
             <button
               className="btn"
               style={{
@@ -81,7 +87,7 @@ function PrivateHome() {
                   "linear-gradient(135deg, #6366f1, #8b5cf6)",
                 border: "none",
                 color: "#fff",
-                padding: "10px 12px",
+                padding: "10px 20px",
                 minWidth: "140px",
                 fontSize: "19px",
                 fontWeight: "600",
@@ -91,7 +97,7 @@ function PrivateHome() {
                 transition: "0.3s ease",
                 whiteSpace: "nowrap",
               }}
-              onClick={() => navigate("/login")}
+              onClick={() => navigate("/quiz")}
               onMouseOver={(e) => {
                 e.target.style.transform = "translateY(-2px)";
               }}
@@ -99,7 +105,7 @@ function PrivateHome() {
                 e.target.style.transform = "translateY(0px)";
               }}
             >
-              Get Started
+              Start Quiz
             </button>
 
             {/* LEARN MORE */}
@@ -182,6 +188,13 @@ function PrivateHome() {
 
             <div
               key={i}
+              onClick={() => {
+                if (item.title === "Roadmaps") {
+                  navigate("/roadmaps");
+                } else if (item.title === "Quiz") {
+                  navigate("/quiz");
+                }
+              }}
               style={{
                 minWidth: "300px",
                 maxWidth: "300px",

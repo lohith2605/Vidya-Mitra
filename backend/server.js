@@ -1,8 +1,16 @@
 // Server bootstrap for Vidya Mitra
+require("dotenv").config();
 const app = require("./app");
+const connectDB = require("./config/db");
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+// Connect to database first, then start server
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+    });
+}).catch((err) => {
+    console.error("Failed to start server due to connection failure:", err.message);
+    process.exit(1);
 });
