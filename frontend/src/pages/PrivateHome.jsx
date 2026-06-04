@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PrivateNavbar from "../components/PrivateNavbar";
 
@@ -174,16 +174,7 @@ function PrivateHome() {
               desc: "Test your knowledge and discover your strengths.",
               icon: "🧠",
             },
-            {
-              title: "Recommendations",
-              desc: "Get personalized suggestions for your career path.",
-              icon: "✨",
-            },
-            {
-              title: "AI Mentor",
-              desc: "Receive AI-powered guidance and career support.",
-              icon: "🤖",
-            },
+           
           ].map((item, i) => (
 
             <div

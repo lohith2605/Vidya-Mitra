@@ -5,7 +5,7 @@ function PrivateNavbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("vidya_user_logged_in");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -31,19 +31,19 @@ function PrivateNavbar() {
             width: "40px",
             height: "40px",
             borderRadius: "14px",
-            background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+            background: "white",
             display: "grid",
             placeItems: "center",
             color: "#fff",
             fontWeight: 700,
-            fontSize: "1rem",
+            fontSize: "1.5rem",
           }}
         >
-          V
+         🎓
         </div>
         <div>
           <div style={{ fontSize: "0.95rem", fontWeight: 700 }}>VidyaMitra</div>
-          <div style={{ fontSize: "0.72rem", color: "#6b7280" }}>Private dashboard</div>
+         
         </div>
       </div>
 
@@ -139,4 +139,3 @@ function PrivateNavbar() {
 }
 
 export default PrivateNavbar;
-

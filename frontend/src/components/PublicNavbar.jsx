@@ -10,20 +10,8 @@ function PublicNavbar() {
 
       <div className="ms-auto d-flex align-items-center gap-3">
 
-        {/* Roadmaps */}
-        <Link
-          to="/roadmaps"
-          className="px-4 py-2 rounded-pill text-white fw-medium"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-            boxShadow: "0 6px 15px rgba(99,102,241,0.3)",
-            border: "none"
-          }}
-        >
-          Roadmaps
-        </Link>
+        
+ 
 
         {/* About */}
         <Link

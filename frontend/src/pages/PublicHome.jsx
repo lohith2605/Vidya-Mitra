@@ -68,9 +68,9 @@ function PublicHome() {
 
             <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
               {[
-                { label: "Explore Colleges", variant: "primary", action: () => navigate("/colleges") },
-                { label: "Start Quiz", variant: "secondary", action: () => navigate("/quiz") },
-                { label: "View Roadmaps", variant: "ghost", action: () => navigate("/roadmaps") },
+                { label: "Explore Colleges", variant: "primary", action: () => navigate("/login") },
+                { label: "Start Quiz", variant: "secondary", action: () => navigate("/register") },
+                { label: "View Roadmaps", variant: "ghost", action: () => navigate("/login") },
                 
               ].map((button) => (
                 <button
@@ -150,11 +150,7 @@ function PublicHome() {
                   subtitle: "Complete a short quiz to find your strengths.",
                   accent: "#d8b4fe",
                 },
-                {
-                  title: "Mentor Connect",
-                  subtitle: "Chat with career advisors and AI mentors.",
-                  accent: "#bfdbfe",
-                },
+                
               ].map((item) => (
                 <div
                   key={item.title}
@@ -196,11 +192,7 @@ function PublicHome() {
                 desc: "Compare programs, fees, and placement data quickly.",
                 icon: "🏫",
               },
-              {
-                title: "Mentor Sessions",
-                desc: "Book guidance sessions with subject experts.",
-                icon: "💬",
-              },
+            
             ].map((card) => (
               <div
                 key={card.title}
