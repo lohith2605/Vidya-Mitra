@@ -167,7 +167,7 @@ function PrivateHome() {
             {
               title: "Colleges",
               desc: "Explore top colleges and universities.",
-              icon: "🏫",
+              icon: "🏛️",
             },
             {
               title: "Quiz",
