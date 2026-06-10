@@ -1,11 +1,26 @@
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function PrivateNavbar() {
+function PrivateNavbar({ initialSearch = "" }) {
   const navigate = useNavigate();
+  const [search, setSearch] = useState(initialSearch);
+
+  useEffect(() => {
+    setSearch(initialSearch);
+  }, [initialSearch]);
 
   const handleLogout = () => {
     localStorage.removeItem("vidya_user_logged_in");
     navigate("/");
+  };
+
+  const handleSearch = () => {
+    const query = search.trim();
+    if (query) {
+      navigate(`/colleges?search=${encodeURIComponent(query)}`);
+    } else {
+      navigate("/colleges");
+    }
   };
 
   return (
@@ -86,6 +101,14 @@ function PrivateNavbar() {
           </span>
           <input
             type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                handleSearch();
+              }
+            }}
             placeholder="Search colleges, career paths..."
             style={{
               flex: 1,
@@ -96,6 +119,21 @@ function PrivateNavbar() {
               color: "#111827",
             }}
           />
+          <button
+            type="button"
+            onClick={handleSearch}
+            style={{
+              border: "none",
+              background: "transparent",
+              color: "#4f46e5",
+              fontWeight: 700,
+              cursor: "pointer",
+              fontSize: "0.92rem",
+              padding: "0 0.5rem",
+            }}
+          >
+            Search
+          </button>
         </div>
       </div>
 

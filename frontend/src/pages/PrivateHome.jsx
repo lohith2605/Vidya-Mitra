@@ -167,7 +167,7 @@ function PrivateHome() {
             {
               title: "Colleges",
               desc: "Explore top colleges and universities.",
-              icon: "🏫",
+              icon: "🏛️",
             },
             {
               title: "Quiz",
@@ -184,6 +184,8 @@ function PrivateHome() {
                   navigate("/roadmaps");
                 } else if (item.title === "Quiz") {
                   navigate("/quiz");
+                } else if (item.title === "Colleges") {
+                  navigate("/colleges");
                 }
               }}
               style={{

@@ -8,6 +8,7 @@ import PrivateHome from "./pages/PrivateHome";
 import RoadmapsPage from "./pages/RoadmapsPage";
 import QuizPage from "./pages/QuizPage";
 import CareerGuidancePage from "./pages/CareerGuidancePage";
+import Colleges from "./pages/Colleges";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
 
       {/* CAREER GUIDANCE PAGE */}
       <Route path="/career-guidance" element={<CareerGuidancePage />} />
+
+      {/* COLLEGES PAGE */}
+      <Route path="/colleges" element={<Colleges />} />
 
       {/* ABOUT PAGE */}
       <Route path="/about" element={<About />} />
