@@ -4,6 +4,7 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const questionRoutes = require("./routes/questionRoutes");
 const assessmentRoutes = require("./routes/assessmentRoutes");
+const collegeRoutes = require("./routes/collegeRoutes");
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/questions", questionRoutes);
 app.use("/api/assessment", assessmentRoutes);
+app.use("/api/colleges", collegeRoutes);
 
 app.get("/", (req, res) => {
     res.send("Vidya Mitra Backend Running");

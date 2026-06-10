@@ -184,6 +184,8 @@ function PrivateHome() {
                   navigate("/roadmaps");
                 } else if (item.title === "Quiz") {
                   navigate("/quiz");
+                } else if (item.title === "Colleges") {
+                  navigate("/colleges");
                 }
               }}
               style={{
