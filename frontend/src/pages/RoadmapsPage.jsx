@@ -204,7 +204,7 @@ const RoadmapsPage = () => {
             🤖 AI Career Help
           </button>
 
-          <Link to="/" style={{
+          <Link to="/privatehome" style={{
             textDecoration: "none",
             color: isDarkMode ? "#cbd5e1" : "#4b5563",
             fontWeight: 600
