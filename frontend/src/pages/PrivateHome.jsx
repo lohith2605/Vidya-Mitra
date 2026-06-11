@@ -155,10 +155,11 @@ function PrivateHome() {
 
           {[
             {
-              title: "Career Guidance",
-              desc: "Discover the best career options based on your interests and skills.",
-              icon: "🎯",
+              title: "Quiz",
+              desc: "Test your knowledge and discover your strengths.",
+              icon: "🧠",
             },
+           
             {
               title: "Roadmaps",
               desc: "Follow structured paths to achieve your goals.",
@@ -169,10 +170,11 @@ function PrivateHome() {
               desc: "Explore top colleges and universities.",
               icon: "🏛️",
             },
-            {
-              title: "Quiz",
-              desc: "Test your knowledge and discover your strengths.",
-              icon: "🧠",
+           
+             {
+              title: "Career Guidance",
+              desc: "Discover the best career options based on your interests and skills.",
+              icon: "🎯",
             },
            
           ].map((item, i) => (

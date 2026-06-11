@@ -53,6 +53,17 @@ function Colleges() {
     loadColleges();
   }, [queryParam, selectedDistricts, selectedTypes]);
 
+  useEffect(() => {
+    if (
+      searchTerm.trim() === "" &&
+      selectedDistricts.length === 0 &&
+      selectedTypes.length === 0 &&
+      queryParam !== ""
+    ) {
+      setSearchParams({});
+    }
+  }, [searchTerm, selectedDistricts, selectedTypes, queryParam, setSearchParams]);
+
   const handleCheckboxChange = (value, current, setter) => {
     if (current.includes(value)) {
       setter(current.filter((item) => item !== value));
@@ -123,11 +134,10 @@ function Colleges() {
                 marginBottom: "1rem",
               }}
             >
-              Discover the right college match.
+              Discover the right college.
             </h1>
             <p style={{ color: "#475569", fontSize: "1rem", lineHeight: "1.8" }}>
-              Browse glossy college cards with district and type filters. Search by college
-              name, district, or type to see the nearest matches instantly.
+               Search by college name, district, or Course to see the nearest matches instantly.
             </p>
           </div>
 
@@ -178,6 +188,7 @@ function Colleges() {
                 <div
                   style={{
                     display: "flex",
+                    flexWrap: "wrap",
                     gap: "0.75rem",
                     alignItems: "center",
                     marginBottom: "1rem",
@@ -189,6 +200,7 @@ function Colleges() {
                     placeholder="Search by college, type, district"
                     style={{
                       flex: 1,
+                      minWidth: 0,
                       padding: "0.95rem 1rem",
                       borderRadius: "18px",
                       border: "1px solid rgba(148,163,184,0.2)",
@@ -200,6 +212,7 @@ function Colleges() {
                   <button
                     type="submit"
                     style={{
+                      flexShrink: 0,
                       padding: "0.95rem 1.1rem",
                       borderRadius: "18px",
                       border: "none",
@@ -218,71 +231,83 @@ function Colleges() {
               </p>
             </section>
 
-            <section style={{ marginBottom: "1.5rem" }}>
-              <h2 style={{ marginBottom: "1rem", color: "#111827" }}>
-                Districts
-              </h2>
-              <div style={{ display: "grid", gap: "0.85rem" }}>
-                {districtOptions.length === 0 ? (
-                  <p style={{ color: "#64748b" }}>Loading districts…</p>
-                ) : (
-                  districtOptions.map((district) => (
-                    <label
-                      key={district}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.75rem",
-                        color: "#334155",
-                        fontSize: "0.95rem",
-                        cursor: "pointer",
-                      }}
-                    >
-                      <input
-                        type="checkbox"
-                        checked={selectedDistricts.includes(district)}
-                        onChange={() => handleCheckboxChange(district, selectedDistricts, setSelectedDistricts)}
-                        style={{ width: "16px", height: "16px" }}
-                      />
-                      {district}
-                    </label>
-                  ))
-                )}
-              </div>
-            </section>
+            <div
+              style={{
+                maxHeight: "420px",
+                overflowY: "auto",
+                paddingRight: "0.35rem",
+                display: "grid",
+                gap: "1.5rem",
+              }}
+            >
+              <section style={{ marginBottom: 0 }}>
+                <h2 style={{ marginBottom: "1rem", color: "#111827" }}>
+                  Districts
+                </h2>
+                <div style={{ display: "grid", gap: "0.85rem" }}>
+                  {districtOptions.length === 0 ? (
+                    <p style={{ color: "#64748b" }}>Loading districts…</p>
+                  ) : (
+                    districtOptions
+                      .filter((district) => district !== "Not Available")
+                      .map((district) => (
+                        <label
+                          key={district}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "0.75rem",
+                            color: "#334155",
+                            fontSize: "0.95rem",
+                            cursor: "pointer",
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            checked={selectedDistricts.includes(district)}
+                            onChange={() => handleCheckboxChange(district, selectedDistricts, setSelectedDistricts)}
+                            style={{ width: "16px", height: "16px" }}
+                          />
+                          {district}
+                        </label>
+                      ))
+                  )}
+                </div>
+              </section>
 
-            <section>
-              <h2 style={{ marginBottom: "1rem", color: "#111827" }}>
-                Types
-              </h2>
-              <div style={{ display: "grid", gap: "0.85rem" }}>
-                {typeOptions.length === 0 ? (
-                  <p style={{ color: "#64748b" }}>Loading types…</p>
-                ) : (
-                  typeOptions.map((type) => (
-                    <label
-                      key={type}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.75rem",
-                        color: "#334155",
-                        fontSize: "0.95rem",
-                        cursor: "pointer",
-                      }}
-                    >
-                      <input
-                        type="checkbox"
-                        checked={selectedTypes.includes(type)}
-                        onChange={() => handleCheckboxChange(type, selectedTypes, setSelectedTypes)}
-                        style={{ width: "16px", height: "16px" }}
-                      />
-                      {type}
-                    </label>
-                  ))
-                )}
-              </div>
-            </section>
+              <section style={{ marginBottom: 0 }}>
+                <h2 style={{ marginBottom: "1rem", color: "#111827" }}>
+                  Courses
+                </h2>
+                <div style={{ display: "grid", gap: "0.85rem" }}>
+                  {typeOptions.length === 0 ? (
+                    <p style={{ color: "#64748b" }}>Loading courses…</p>
+                  ) : (
+                    typeOptions.map((type) => (
+                      <label
+                        key={type}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.75rem",
+                          color: "#334155",
+                          fontSize: "0.95rem",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={selectedTypes.includes(type)}
+                          onChange={() => handleCheckboxChange(type, selectedTypes, setSelectedTypes)}
+                          style={{ width: "16px", height: "16px" }}
+                        />
+                        {type}
+                      </label>
+                    ))
+                  )}
+                </div>
+              </section>
+            </div>
           </aside>
 
           <section>
@@ -305,20 +330,7 @@ function Colleges() {
                 </h2>
               </div>
 
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.65rem",
-                  padding: "0.8rem 1rem",
-                  borderRadius: "999px",
-                  background: "rgba(99,102,241,0.08)",
-                  color: "#4338ca",
-                  fontWeight: 700,
-                }}
-              >
-                Glossy SaaS UX
-              </div>
+              
             </div>
 
             {loading ? (
@@ -343,6 +355,28 @@ function Colleges() {
                 }}
               >
                 {error}
+              </div>
+            ) : colleges.length === 0 ? (
+              <div
+                style={{
+                  minHeight: "320px",
+                  display: "grid",
+                  placeItems: "center",
+                  color: "#475569",
+                  background: "rgba(255,255,255,0.92)",
+                  borderRadius: "24px",
+                  border: "1px solid rgba(148,163,184,0.18)",
+                  padding: "2rem",
+                }}
+              >
+                <p style={{ margin: 0, fontSize: "1.25rem", fontWeight: 700, color: "#111827" }}>
+                  Not found
+                </p>
+                <p style={{ margin: 0, marginTop: "0.75rem", color: "#64748b" }}>
+                  {queryParam
+                    ? `No colleges matched "${queryParam}". Please try another search.`
+                    : "No colleges match the current filters."}
+                </p>
               </div>
             ) : (
               <div
