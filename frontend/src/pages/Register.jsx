@@ -3,19 +3,20 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); // FIXED (now used properly)
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setError("");
-    setLoading(true);
+    setLoading(true); // FIXED
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,102 +24,104 @@ const Register = () => {
         body: JSON.stringify({ username, email, password }),
       });
 
-      const data = await response.json();
+      const data = await res.json();
 
-      if (!response.ok) {
+      if (!res.ok) {
         throw new Error(data.message || "Registration failed");
       }
 
-      // Registration successful, navigate to login page
       navigate("/login");
+
     } catch (err) {
       setError(err.message);
     } finally {
-      setLoading(false);
+      setLoading(false); // FIXED
     }
   };
 
   return (
     <div className="auth-page">
-      <div className="auth-container register-container">
+      <div className="auth-container">
 
-        {/* REGISTER FORM */}
-        <div className="left-form">
+        {/* LEFT PANEL */}
+        <div className="left-panel">
+          <h1>Create Account</h1>
+          <p>Join VidyaMitra Platform</p>
 
+          <Link to="/login">
+            <button className="switch-btn">Login</button>
+          </Link>
+        </div>
+
+        {/* RIGHT PANEL */}
+        <div className="right-panel">
           <form className="form" onSubmit={handleSubmit}>
 
-            <h1>Registration</h1>
+            <h1>Register</h1>
 
             {error && (
-              <div style={{ color: "#ef4444", marginBottom: "15px", fontSize: "14px", fontWeight: "500", textAlign: "center" }}>
-                ⚠️ {error}
-              </div>
+              <p style={{ color: "red", textAlign: "center" }}>
+                {error}
+              </p>
             )}
 
             <div className="input-box">
-              <input 
-                type="text" 
-                placeholder="Username" 
+              <input
+                type="text"
+                placeholder="Username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                required 
+                required
               />
               <span>👤</span>
             </div>
 
             <div className="input-box">
-              <input 
-                type="email" 
-                placeholder="Email" 
+              <input
+                type="email"
+                placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required 
+                required
               />
               <span>📧</span>
             </div>
 
             <div className="input-box">
-              <input 
-                type="password" 
-                placeholder="Password" 
+              <input
+                type="password"
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required 
+                required
               />
               <span>🔒</span>
             </div>
 
-            <button type="submit" className="btn" disabled={loading}>
+            <button className="btn" disabled={loading}>
               {loading ? "Registering..." : "Register"}
             </button>
 
-            <p>or register with social platforms</p>
+            <p>or continue with social platforms</p>
 
             <div className="social-icons">
-              <a href="#">G</a>
-              <a href="#">F</a>
-              <a href="#">X</a>
-              <a href="#">in</a>
+              <a className="google">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
+              </a>
+              <a className="facebook">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+              </a>
+              <a className="github">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+              </a>
+              <a className="twitter">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" />
+              </a>
             </div>
 
           </form>
-
         </div>
 
-        {/* RIGHT PANEL */}
-        <div className="right-side">
-
-          <h1>Welcome Back!</h1>
-
-          <p>Already have an account?</p>
-
-          <Link to="/login">
-            <button className="switch-btn">
-              Login
-            </button>
-          </Link>
-
-        </div>
       </div>
     </div>
   );
