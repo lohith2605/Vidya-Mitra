@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+
+  const [role, setRole] = useState("user");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -14,27 +16,30 @@ const Login = () => {
     setLoading(true);
 
     try {
+      if (role === "admin") {
+        if (email === "admin@vidyamitra.com" && password === "admin123") {
+          localStorage.setItem("user_role", "admin");
+          navigate("/admin");
+          return;
+        }
+        throw new Error("Invalid Admin Credentials");
+      }
+
       const response = await fetch("http://localhost:5000/api/auth/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
 
-      if (!response.ok) {
-        throw new Error(data.message || "Invalid credentials");
-      }
+      if (!response.ok) throw new Error(data.message);
 
-      // Save user details & token
-      localStorage.setItem("vidya_user_token", data.token);
-      localStorage.setItem("vidya_user_logged_in", "true");
-      localStorage.setItem("vidya_username", data.user.username);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user_role", "user");
 
-      // Redirect to dashboard
       navigate("/privatehome");
+
     } catch (err) {
       setError(err.message);
     } finally {
@@ -48,70 +53,53 @@ const Login = () => {
 
         {/* LEFT PANEL */}
         <div className="left-panel">
-          <h1>Hello, Welcome!</h1>
-
-          <p>Don't have an account?</p>
+          <h1>{role === "admin" ? "Admin Portal" : "Welcome Back"}</h1>
+          <p>{role === "admin" ? "Manage System" : "Login to continue"}</p>
 
           <Link to="/register">
-            <button className="switch-btn">
-              Register
-            </button>
+            <button className="switch-btn">Register</button>
           </Link>
         </div>
 
-        {/* LOGIN FORM */}
+        {/* RIGHT PANEL */}
         <div className="right-panel">
           <form className="form" onSubmit={handleSubmit}>
 
-            <h1>Login</h1>
+            <div className="role-switch">
+              <button type="button" className={`role-btn ${role === "user" ? "active" : ""}`} onClick={() => setRole("user")}>User</button>
+              <button type="button" className={`role-btn ${role === "admin" ? "active" : ""}`} onClick={() => setRole("admin")}>Admin</button>
+            </div>
 
-            {error && (
-              <div style={{ color: "#ef4444", marginBottom: "15px", fontSize: "14px", fontWeight: "500", textAlign: "center" }}>
-                ⚠️ {error}
-              </div>
-            )}
+            <h1>{role === "admin" ? "Admin Login" : "User Login"}</h1>
+
+            {error && <p style={{ color: "red" }}>{error}</p>}
 
             <div className="input-box">
-              <input 
-                type="email" 
-                placeholder="Email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required 
-              />
+              <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
               <span>👤</span>
             </div>
 
             <div className="input-box">
-              <input 
-                type="password" 
-                placeholder="Password" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required 
-              />
+              <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
               <span>🔒</span>
             </div>
 
-            <a href="#" className="forgot">
-              Forgot Password?
-            </a>
-
-            <button type="submit" className="btn" disabled={loading}>
-              {loading ? "Logging in..." : "Login"}
+            <button className="btn" disabled={loading}>
+              {loading ? "Loading..." : "Login"}
             </button>
 
-            <p>or login with social platforms</p>
+            <p>or continue with</p>
 
             <div className="social-icons">
-              <a href="#">G</a>
-              <a href="#">F</a>
-              <a href="#">X</a>
-              <a href="#">in</a>
+              <a className="google"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" /></a>
+              <a className="facebook"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" /></a>
+              <a className="github"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+              <a className="twitter"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" /></a>
             </div>
 
           </form>
         </div>
+
       </div>
     </div>
   );
