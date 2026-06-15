@@ -364,7 +364,11 @@ const generateRecommendations = (educationLevel, answers) => {
 // POST /api/assessment/submit
 exports.submitAssessment = async (req, res) => {
   try {
-    const { userId, username } = req.user;
+    console.log('Submit Assessment Request Body:', req.body);
+    console.log('Submit Assessment Request User:', req.user);
+
+    const userId = req.user?.id;
+    const username = req.user?.username || req.user?.email || 'Unknown';
     const { educationLevel, answers } = req.body;
 
     if (!educationLevel || !answers || !Array.isArray(answers)) {
@@ -386,6 +390,9 @@ exports.submitAssessment = async (req, res) => {
       recommendations,
       completedAt: new Date()
     };
+
+    console.log('Calculated Scores: N/A - using heuristic rules');
+    console.log('Career Matches:', recommendations);
 
     if (isDbConnected) {
       // Standard Database Mode
@@ -409,6 +416,7 @@ exports.submitAssessment = async (req, res) => {
     });
   } catch (error) {
     console.error("Submit Assessment Error:", error);
+    console.error(error.stack);
     res.status(500).json({ message: "Internal server error" });
   }
 };

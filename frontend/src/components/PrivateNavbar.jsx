@@ -12,6 +12,9 @@ function PrivateNavbar({ initialSearch = "" }) {
 
   const handleLogout = () => {
     localStorage.removeItem("vidya_user_logged_in");
+    localStorage.removeItem("vidya_user_token");
+    localStorage.removeItem("vidya_username");
+    localStorage.removeItem("user_role");
     navigate("/");
   };
 
@@ -67,7 +70,7 @@ function PrivateNavbar({ initialSearch = "" }) {
             fontSize: "1.5rem",
           }}
         >
-         🎓
+         🎓 
         </div>
         <div>
           <div style={{ fontSize: "0.95rem", fontWeight: 700 }}>VidyaMitra</div>

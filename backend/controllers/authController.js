@@ -5,6 +5,9 @@ const jwt = require("jsonwebtoken");
 // Register
 exports.registerUser = async (req, res) => {
   try {
+    console.log('[Backend] Received request:', req.method, req.path);
+    console.log('[Backend] Headers:', req.headers && req.headers['content-type']);
+    console.log('[Backend] Body payload:', req.body);
     const {
       username,
       email,
@@ -29,6 +32,8 @@ exports.registerUser = async (req, res) => {
       email,
       password: hashedPassword,
     });
+
+    console.log('[Backend] Created user id:', user._id);
 
     res.status(201).json({
       success: true,
@@ -71,10 +76,18 @@ exports.loginUser = async (req, res) => {
       });
     }
 
+    console.log('[Backend] JWT_SECRET present:', !!process.env.JWT_SECRET, 'length:', process.env.JWT_SECRET ? process.env.JWT_SECRET.length : 0);
+    if (!process.env.JWT_SECRET) {
+      return res.status(500).json({
+        success: false,
+        message: 'JWT secret is not configured on the server',
+      });
+    }
+
     const token = jwt.sign(
-      { id: user._id },
+      { id: user._id, username: user.username, email: user.email },
       process.env.JWT_SECRET,
-      { expiresIn: "7d" }
+      { expiresIn: '7d' }
     );
 
     res.status(200).json({

@@ -31,14 +31,23 @@ const Login = () => {
         body: JSON.stringify({ email, password }),
       });
 
+      console.log('[Login] Response object', response);
       const data = await response.json();
+      console.log('[Login] Response body', data);
 
-      if (!response.ok) throw new Error(data.message);
+      if (!response.ok) {
+        throw new Error(data && data.message ? data.message : 'Login failed');
+      }
 
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("user_role", "user");
+      // Store token and user info using keys other components expect
+      console.log('[Login] Received token', data.token);
+      localStorage.setItem('vidya_user_token', data.token);
+      localStorage.setItem('vidya_username', data.user && data.user.username ? data.user.username : 'User');
+      localStorage.setItem('vidya_user_logged_in', 'true');
+      localStorage.setItem('user_role', 'user');
 
-      navigate("/privatehome");
+      console.log('[Login] Stored token and user info, navigating to /privatehome');
+      navigate('/privatehome');
 
     } catch (err) {
       setError(err.message);

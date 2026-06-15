@@ -1,5 +1,7 @@
 // Server bootstrap for Vidya Mitra
 require("dotenv").config();
+// Log whether JWT_SECRET is loaded (do not print the full secret in production)
+console.log('[Server] JWT_SECRET present:', !!process.env.JWT_SECRET, 'length:', process.env.JWT_SECRET ? process.env.JWT_SECRET.length : 0);
 const app = require("./app");
 const connectDB = require("./config/db");
 

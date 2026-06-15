@@ -14,8 +14,12 @@ const Register = () => {
     e.preventDefault();
     setError("");
     setLoading(true); // FIXED
-
     try {
+      console.log("[Register] Sending request to backend", {
+        url: "http://localhost:5000/api/auth/register",
+        body: { username, email, password },
+      });
+
       const res = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: {
@@ -24,15 +28,34 @@ const Register = () => {
         body: JSON.stringify({ username, email, password }),
       });
 
-      const data = await res.json();
+      console.log("[Register] Response status", res.status);
+
+      let dataText;
+      try {
+        dataText = await res.text();
+        // Try parse as JSON for structured error messages
+        try {
+          console.log("[Register] Response body (json)", JSON.parse(dataText));
+        } catch (e) {
+          console.log("[Register] Response body (text)", dataText);
+        }
+      } catch (e) {
+        console.log("[Register] Failed to read response body", e.message);
+      }
 
       if (!res.ok) {
-        throw new Error(data.message || "Registration failed");
+        // if response body contained JSON, prefer its message
+        let parsed;
+        try {
+          parsed = JSON.parse(dataText);
+        } catch (e) {}
+        throw new Error((parsed && parsed.message) || "Registration failed");
       }
 
       navigate("/login");
 
     } catch (err) {
+      console.error("[Register] Fetch error", err);
       setError(err.message);
     } finally {
       setLoading(false); // FIXED
