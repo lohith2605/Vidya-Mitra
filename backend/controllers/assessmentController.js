@@ -424,7 +424,7 @@ exports.submitAssessment = async (req, res) => {
 // GET /api/assessment/history
 exports.getAssessmentHistory = async (req, res) => {
   try {
-    const { userId } = req.user;
+    const userId = req.user?.id;
     const isDbConnected = mongoose.connection.readyState === 1;
 
     if (isDbConnected) {
