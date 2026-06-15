@@ -10,6 +10,7 @@ import QuizPage from "./pages/QuizPage";
 import CareerGuidancePage from "./pages/CareerGuidancePage";
 import Colleges from "./pages/Colleges";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       {/* ABOUT PAGE */}
       <Route path="/about" element={<About />} />
       <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/admin/login" element={<AdminLogin />} />
 
     </Routes>
   );

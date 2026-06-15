@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
-  const [role, setRole] = useState("user");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -16,15 +15,6 @@ const Login = () => {
     setLoading(true);
 
     try {
-      if (role === "admin") {
-        if (email === "admin@vidyamitra.com" && password === "admin123") {
-          localStorage.setItem("user_role", "admin");
-          navigate("/admin");
-          return;
-        }
-        throw new Error("Invalid Admin Credentials");
-      }
-
       const response = await fetch("http://localhost:5000/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -62,8 +52,8 @@ const Login = () => {
 
         {/* LEFT PANEL */}
         <div className="left-panel">
-          <h1>{role === "admin" ? "Admin Portal" : "Welcome Back"}</h1>
-          <p>{role === "admin" ? "Manage System" : "Login to continue"}</p>
+          <h1>Welcome Back</h1>
+          <p>Login to continue</p>
 
           <Link to="/register">
             <button className="switch-btn">Register</button>
@@ -75,11 +65,11 @@ const Login = () => {
           <form className="form" onSubmit={handleSubmit}>
 
             <div className="role-switch">
-              <button type="button" className={`role-btn ${role === "user" ? "active" : ""}`} onClick={() => setRole("user")}>User</button>
-              <button type="button" className={`role-btn ${role === "admin" ? "active" : ""}`} onClick={() => setRole("admin")}>Admin</button>
+              <button type="button" className="role-btn active" onClick={() => navigate("/login")}>User</button>
+              <button type="button" className="role-btn" onClick={() => navigate("/admin/login")}>Admin</button>
             </div>
 
-            <h1>{role === "admin" ? "Admin Login" : "User Login"}</h1>
+            <h1>User Login</h1>
 
             {error && <p style={{ color: "red" }}>{error}</p>}
 
