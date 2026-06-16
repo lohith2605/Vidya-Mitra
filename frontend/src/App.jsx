@@ -44,6 +44,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/admin" element={<AdminDashboard />} />
       <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/privatehome" element={<PrivateHome />} />
+<Route path="/admin" element={<AdminDashboard />} />
 
     </Routes>
   );

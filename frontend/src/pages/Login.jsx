@@ -4,40 +4,90 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("");
+  const [role, setRole] = useState("user");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     setError("");
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+      // ADMIN LOGIN
+      if (role === "admin") {
+        if (
+          username === "admin" &&
+          password === "admin123"
+        ) {
+          localStorage.setItem(
+            "vidya_user_logged_in",
+            "true"
+          );
 
-      console.log('[Login] Response object', response);
-      const data = await response.json();
-      console.log('[Login] Response body', data);
+          localStorage.setItem(
+            "user_role",
+            "admin"
+          );
 
-      if (!response.ok) {
-        throw new Error(data && data.message ? data.message : 'Login failed');
+          navigate("/admin");
+          return;
+        }
+
+        throw new Error(
+          "Invalid Admin Credentials"
+        );
       }
 
-      // Store token and user info using keys other components expect
-      console.log('[Login] Received token', data.token);
-      localStorage.setItem('vidya_user_token', data.token);
-      localStorage.setItem('vidya_username', data.user && data.user.username ? data.user.username : 'User');
-      localStorage.setItem('vidya_user_logged_in', 'true');
-      localStorage.setItem('user_role', 'user');
+      // USER LOGIN
+      const response = await fetch(
+        "http://localhost:5000/api/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type":
+              "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            password,
+          }),
+        }
+      );
 
-      console.log('[Login] Stored token and user info, navigating to /privatehome');
-      navigate('/privatehome');
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.message ||
+            "Login Failed"
+        );
+      }
+
+      localStorage.setItem(
+        "vidya_user_logged_in",
+        "true"
+      );
+
+      localStorage.setItem(
+        "vidya_user_token",
+        data.token
+      );
+
+      localStorage.setItem(
+        "vidya_username",
+        data.user.username
+      );
+
+      localStorage.setItem(
+        "user_role",
+        "user"
+      );
+
+      navigate("/privatehome");
 
     } catch (err) {
       setError(err.message);
@@ -50,50 +100,152 @@ const Login = () => {
     <div className="auth-page">
       <div className="auth-container">
 
-        {/* LEFT PANEL */}
         <div className="left-panel">
-          <h1>Welcome Back</h1>
-          <p>Login to continue</p>
+          <h1>
+            {role === "admin"
+              ? "Admin Portal"
+              : "Welcome Back"}
+          </h1>
+
+          <p>
+            {role === "admin"
+              ? "Manage Platform"
+              : "Login To Continue"}
+          </p>
 
           <Link to="/register">
-            <button className="switch-btn">Register</button>
+            <button className="switch-btn">
+              Register
+            </button>
           </Link>
         </div>
 
-        {/* RIGHT PANEL */}
         <div className="right-panel">
-          <form className="form" onSubmit={handleSubmit}>
-
+          <form
+            className="form"
+            onSubmit={handleSubmit}
+          >
             <div className="role-switch">
-              <button type="button" className="role-btn active" onClick={() => navigate("/login")}>User</button>
-              <button type="button" className="role-btn" onClick={() => navigate("/admin/login")}>Admin</button>
+              <button
+                type="button"
+                className={`role-btn ${
+                  role === "user"
+                    ? "active"
+                    : ""
+                }`}
+                onClick={() =>
+                  setRole("user")
+                }
+              >
+                👨‍🎓 User
+              </button>
+
+              <button
+                type="button"
+                className={`role-btn ${
+                  role === "admin"
+                    ? "active"
+                    : ""
+                }`}
+                onClick={() =>
+                  setRole("admin")
+                }
+              >
+                👨‍💼 Admin
+              </button>
             </div>
 
-            <h1>User Login</h1>
+            <h1>
+              {role === "admin"
+                ? "Admin Login"
+                : "User Login"}
+            </h1>
 
-            {error && <p style={{ color: "red" }}>{error}</p>}
+            {error && (
+              <p
+                style={{
+                  color: "red",
+                  textAlign: "center",
+                }}
+              >
+                {error}
+              </p>
+            )}
 
             <div className="input-box">
-              <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) =>
+                  setUsername(
+                    e.target.value
+                  )
+                }
+                required
+              />
               <span>👤</span>
             </div>
 
             <div className="input-box">
-              <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) =>
+                  setPassword(
+                    e.target.value
+                  )
+                }
+                required
+              />
               <span>🔒</span>
             </div>
 
-            <button className="btn" disabled={loading}>
-              {loading ? "Loading..." : "Login"}
+            <button
+              className="btn"
+              disabled={loading}
+            >
+              {loading
+                ? "Loading..."
+                : role === "admin"
+                ? "Admin Login"
+                : "Login"}
             </button>
 
-            <p>or continue with</p>
+            <p>
+              or continue with social
+              platforms
+            </p>
 
             <div className="social-icons">
-              <a className="google"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" /></a>
-              <a className="facebook"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" /></a>
-              <a className="github"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
-              <a className="twitter"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" /></a>
+              <a className="google">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                  alt="google"
+                />
+              </a>
+
+              <a className="facebook">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+                  alt="facebook"
+                />
+              </a>
+
+              <a className="github">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="github"
+                />
+              </a>
+
+              <a className="twitter">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                  alt="twitter"
+                />
+              </a>
             </div>
 
           </form>
