@@ -194,10 +194,10 @@ Many students face difficulties in choosing the right career path due to a lack 
 
 ## 👥 Team Members
 
-- Lohith Basetti
-- Sravanthi Mogilicharla
-- Maheshwari
-- V. Purna Chary
+- B.Lohith 
+- M.Sravanthi 
+- Y.Sindhu 
+- V.Purna Chary 
 
 ---
 
