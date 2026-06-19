@@ -109,23 +109,7 @@ function Colleges() {
           }}
         >
           <div style={{ maxWidth: "720px" }}>
-            <p
-              style={{
-                marginBottom: "1rem",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                padding: "0.75rem 1rem",
-                borderRadius: "999px",
-                background: "rgba(99,102,241,0.12)",
-                color: "#4338ca",
-                fontWeight: 700,
-                fontSize: "0.88rem",
-                letterSpacing: "0.04em",
-              }}
-            >
-              College Finder
-            </p>
+            
             <h1
               style={{
                 fontSize: "3.4rem",
@@ -137,7 +121,7 @@ function Colleges() {
               Discover the right college.
             </h1>
             <p style={{ color: "#475569", fontSize: "1rem", lineHeight: "1.8" }}>
-              Search by college name, district, or Course to see the nearest matches instantly.
+              Search by College name, district, or Course to see the nearest matches instantly.
             </p>
           </div>
 
@@ -209,9 +193,7 @@ function Colleges() {
                   </button>
                 </div>
               </form>
-              <p style={{ color: "#475569", fontSize: "0.95rem", margin: 0 }}>
-                Press Enter or click Go to search.
-              </p>
+             
             </section>
 
             <div

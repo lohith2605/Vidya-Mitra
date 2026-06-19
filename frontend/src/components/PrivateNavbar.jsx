@@ -181,7 +181,7 @@ function PrivateNavbar({ initialSearch = "", forceOpenProfile, setForceOpenProfi
       >
         
         <div>
-          <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>🎓 VidyaMitra</div>
+          <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>🎓 Vidya-Mitra</div>
         </div>
       </button>
 
