@@ -18,6 +18,26 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+
+    age: {
+      type: String,
+      default: "",
+    },
+
+    courseClass: {
+      type: String,
+      default: "",
+    },
+
+    selfDetails: {
+      type: String,
+      default: "",
+    },
+
+    fullName: {
+      type: String,
+      default: "",
+    },
   },
   {
     timestamps: true,

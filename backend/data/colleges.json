@@ -8,22 +8,6 @@
     "phoneNumber": "9848168258"
   },
   {
-    "collegeName": " Dr. M.R. Reddy College of Education",
-    "address": "Parkal",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "08713-241727",
-    "phoneNumber": "9848168258"
-  },
-  {
-    "collegeName": "ABV Degree College",
-    "address": "Jangaon",
-    "district": "Jangaon",
-    "type": "P.G. College",
-    "office": "08716-222044",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "ABV Degree College",
     "address": "Jangaon",
     "district": "Jangaon",
@@ -33,15 +17,7 @@
   },
   {
     "collegeName": "AVV Degree College",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2424374",
-    "phoneNumber": "9866019750"
-  },
-  {
-    "collegeName": "AVV Degree College",
-    "address": "Warangal",
+    "address": "Warangal dist",
     "district": "Warangal",
     "type": "P.G. College",
     "office": "0870-2424374",
@@ -56,24 +32,8 @@
     "phoneNumber": "9396600601"
   },
   {
-    "collegeName": "Adarsha Law College",
-    "address": "Balasamudram",
-    "district": "Hanamkonda",
-    "type": "Law College",
-    "office": "0870-2567118",
-    "phoneNumber": "9396600601"
-  },
-  {
     "collegeName": "Akarapu Sharath Chandrika Devi Memorial Degree & PG College for Women",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2427778",
-    "phoneNumber": "9848070102"
-  },
-  {
-    "collegeName": "Akarapu Sharath Chandrika Devi Memorial Degree & PG College for Women",
-    "address": "Warangal",
+    "address": "Warangal dist",
     "district": "Warangal",
     "type": "P.G. College",
     "office": "0870-2427778",
@@ -85,22 +45,6 @@
     "district": "Hanamkonda",
     "type": "MCA College",
     "office": "0870-2524354",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Alluri Instt. of Management",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "0870-2524354",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Alluri Instt. of Management Sciences",
-    "address": "Hunter Road, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "0870-2524354/278",
     "phoneNumber": "Not Available"
   },
   {
@@ -120,60 +64,12 @@
     "phoneNumber": "9848586548"
   },
   {
-    "collegeName": "Alluri Seetha Ramaraju (ASR) Degree College",
-    "address": "Chintoor",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "9848586548"
-  },
-  {
-    "collegeName": "Antigravity Engineering College Test",
-    "address": "Alpha Centauri Sector 4",
-    "district": "Space District",
-    "type": "Engineering College",
-    "office": "123-456-7890",
-    "phoneNumber": "9876543210"
-  },
-  {
-    "collegeName": "Antigravity Engineering College Test 1781530272167",
-    "address": "Alpha Centauri Sector 4",
-    "district": "Space District",
-    "type": "Engineering College",
-    "office": "123-456-7890",
-    "phoneNumber": "9876543210"
-  },
-  {
-    "collegeName": "Antigravity Engineering College Test 1781530300969",
-    "address": "Alpha Centauri Sector 4",
-    "district": "Space District",
-    "type": "Engineering College",
-    "office": "123-456-7890",
-    "phoneNumber": "9876543210"
-  },
-  {
     "collegeName": "Aurobindo College of Pharmacy",
     "address": "Nallabelli, Narsampet-506 330",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-2581667",
     "phoneNumber": "9849096971"
-  },
-  {
-    "collegeName": "Aurobindo College of Pharmacy",
-    "address": "Nallabelli, Narsampet-506 330",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2581667",
-    "phoneNumber": "9849096971"
-  },
-  {
-    "collegeName": "Avinash Instt. of Mgf.",
-    "address": "Waddepally, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9848012229"
   },
   {
     "collegeName": "Avinash Instt. of Mgf.",
@@ -192,35 +88,11 @@
     "phoneNumber": "9866078586"
   },
   {
-    "collegeName": "Balaji Institute of Pharmacy",
-    "address": "Laknepally (V), Narsampet - 506 331",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9866078586"
-  },
-  {
     "collegeName": "Balaji Instt. of Pharm. Science",
     "address": "Laknepally, Narsampet - 506 371",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "08718-232641",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Balaji Instt. of Pharm. Science",
-    "address": "Laknepally, Narsampet - 506 371",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "08718-232641",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Bharathi Institute of Business Management",
-    "address": "Gangadevipally (V), Geesugonda (M)",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
     "phoneNumber": "Not Available"
   },
   {
@@ -240,36 +112,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Bhargavi Degree & P.G. College",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2555788",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "Bhavitha Degree College",
     "address": "Shamsheer Nagar, Ward No. 8, Bellamapalli",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08735-225406",
     "phoneNumber": "9866108843"
-  },
-  {
-    "collegeName": "Bhavitha Degree College",
-    "address": "Shamsheer Nagar, Ward No. 8, Bellamapalli",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08735-225406",
-    "phoneNumber": "9866108843"
-  },
-  {
-    "collegeName": "Blue Birds College of Pharmacy",
-    "address": " 4-286, Bheemaram,Chintagattu, Hanamkonda - 506 015",
-    "district": "Hanamkonda",
-    "type": "Pharmacy College",
-    "office": "0870-6589565",
-    "phoneNumber": "9848230560"
   },
   {
     "collegeName": "Blue Birds College of Pharmacy",
@@ -288,36 +136,12 @@
     "phoneNumber": "9949450102"
   },
   {
-    "collegeName": "C.V. Raman Degree & P.G.College",
-    "address": "Hanuman Nagar, Mancherial",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-252761",
-    "phoneNumber": "9949450102"
-  },
-  {
     "collegeName": "CKM Arts & Sc. College",
     "address": "Desaipet, Warangal",
     "district": "Warangal",
     "type": "P.G. College",
     "office": "0870-2565968",
     "phoneNumber": "9390100634"
-  },
-  {
-    "collegeName": "CKM Arts & Sc. College",
-    "address": "Desaipet, Warangal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2565968",
-    "phoneNumber": "9390100634"
-  },
-  {
-    "collegeName": "CKM Arts & Science College",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "CKM Arts & Science College",
@@ -336,22 +160,6 @@
     "phoneNumber": "9989770893"
   },
   {
-    "collegeName": "CV Raman Degree & P.G. College",
-    "address": "Near Fly Over Bridge, Mancherial",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08736-252761",
-    "phoneNumber": "9989770893"
-  },
-  {
-    "collegeName": "Care College of Pharmacy",
-    "address": " Oglapur, Atmakur, Warangal - 506 007",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-3202543",
-    "phoneNumber": "9490109074"
-  },
-  {
     "collegeName": "Care College of Pharmacy",
     "address": " Oglapur, Atmakur, Warangal - 506 007",
     "district": "Warangal",
@@ -368,36 +176,12 @@
     "phoneNumber": "9848072444"
   },
   {
-    "collegeName": "Chaitanya College of Pharmacy Edl. & Reasearch",
-    "address": "Kishanpura, Hanamkonda-506 001",
-    "district": "Hanamkonda",
-    "type": "Pharmacy College",
-    "office": "0870-2552555",
-    "phoneNumber": "9848072444"
-  },
-  {
     "collegeName": "Chaitanya Degree College",
     "address": "College Road, Mancherial - 504 208",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08736-254553",
     "phoneNumber": "9299992151"
-  },
-  {
-    "collegeName": "Chaitanya Degree College",
-    "address": "College Road, Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-254553",
-    "phoneNumber": "9299992151"
-  },
-  {
-    "collegeName": "Chaitanya Institute of Pharmaceutical Sciences",
-    "address": "Rampur (V)",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9246895795"
   },
   {
     "collegeName": "Chaitanya Institute of Pharmaceutical Sciences",
@@ -419,32 +203,8 @@
     "collegeName": "Chaitanya P.G. College (Autonomous)",
     "address": "Kishanpura, Hanamkonda",
     "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "0870-2578880",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Chaitanya P.G. College (Autonomous)",
-    "address": "Kishanpura, Hanamkonda",
-    "district": "Hanamkonda",
     "type": "MBA College",
     "office": "0870-2555355",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Chaitanya P.G. College (Autonomous)",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2578880",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Chaitanya P.G. College (Autonomous)",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2578880",
     "phoneNumber": "Not Available"
   },
   {
@@ -457,27 +217,11 @@
   },
   {
     "collegeName": "Chaitanya P.G. College (Autonomous)",
-    "address": "Kishanpura, Hanamkonda",
+    "address": "Hanamkonda",
     "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "0870-2555355",
+    "type": "P.G. College",
+    "office": "0870-2578880",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Chanakya Degree College",
-    "address": "H.No. 5-11-732, Priyadarshini Nagar, Nirmal",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08734-245425",
-    "phoneNumber": "9848184639"
-  },
-  {
-    "collegeName": "Chanakya Degree College",
-    "address": "Near Fly-Over Bridge, Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-250086",
-    "phoneNumber": "9866622258"
   },
   {
     "collegeName": "Chanakya Degree College",
@@ -504,36 +248,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "College of Teacher Education",
-    "address": "Lashkar Bazar",
-    "district": "Hanamkonda",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "DRS College of Education",
     "address": "Thorrur",
     "district": "Warangal",
     "type": "College of Education",
     "office": "08719-255859",
     "phoneNumber": "8019272819"
-  },
-  {
-    "collegeName": "DRS College of Education",
-    "address": "Thorrur",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "08719-255859",
-    "phoneNumber": "8019272819"
-  },
-  {
-    "collegeName": "Deeksha Degree College",
-    "address": "1-4-125/5, Adarsh Nagar, Siddapur Road, Nirmal",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9247059091",
-    "phoneNumber": "9440009091"
   },
   {
     "collegeName": "Deeksha Degree College",
@@ -552,36 +272,12 @@
     "phoneNumber": "9346467776"
   },
   {
-    "collegeName": "Dr. M.R. Reddy Degree College",
-    "address": "Parkal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "08713-241727",
-    "phoneNumber": "9346467776"
-  },
-  {
     "collegeName": "Dr. Rajendra Prasad B.Ed. College",
     "address": "Sai Baba Temple, Rajempet, Asifabad - 504293",
     "district": "Adilabad",
     "type": "B.Ed. College",
     "office": "08733-277123",
     "phoneNumber": "9440063388"
-  },
-  {
-    "collegeName": "Dr. Rajendra Prasad B.Ed. College",
-    "address": "Sai Baba Temple, Rajempet, Asifabad - 504293",
-    "district": "Adilabad",
-    "type": "B.Ed. College",
-    "office": "08733-277123",
-    "phoneNumber": "9440063388"
-  },
-  {
-    "collegeName": "Educare College of Education",
-    "address": "Sri Ramnagar, Jangaon - 506 167",
-    "district": "Jangaon",
-    "type": "College of Education",
-    "office": "08716-221937",
-    "phoneNumber": "9908921568"
   },
   {
     "collegeName": "Educare College of Education",
@@ -600,36 +296,12 @@
     "phoneNumber": "9848076494"
   },
   {
-    "collegeName": "Ekashila College of Education",
-    "address": "Jangaon",
-    "district": "Jangaon",
-    "type": "College of Education",
-    "office": "08716-220561",
-    "phoneNumber": "9848076494"
-  },
-  {
     "collegeName": "Fathima College of Education",
     "address": "Kazipet",
     "district": "Kazipet",
     "type": "College of Education",
     "office": "0870-2459508",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Fathima College of Education",
-    "address": "Kazipet",
-    "district": "Kazipet",
-    "type": "College of Education",
-    "office": "0870-2459508",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "GRP Government Degree College",
-    "address": "Bhainsa - 504 103",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08752-30054",
-    "phoneNumber": "8341051224"
   },
   {
     "collegeName": "GRP Government Degree College",
@@ -648,36 +320,12 @@
     "phoneNumber": "9849698399"
   },
   {
-    "collegeName": "Ganapathi College of Education",
-    "address": "Parkal",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "08713-242439",
-    "phoneNumber": "9849698399"
-  },
-  {
     "collegeName": "Gauthami Degree College",
     "address": "Shanthinagar, Adilabad",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08732-220230",
     "phoneNumber": "9440129526"
-  },
-  {
-    "collegeName": "Gauthami Degree College",
-    "address": "Shanthinagar, Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-220230",
-    "phoneNumber": "9440129526"
-  },
-  {
-    "collegeName": "Geervani Degree College",
-    "address": "Mudhol, Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9441203446",
-    "phoneNumber": "9618399196"
   },
   {
     "collegeName": "Geervani Degree College",
@@ -696,27 +344,43 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Gnana Saraswathi Degree College",
-    "address": "Nirmal",
+    "collegeName": "Gokuldas Purushothamdas Ladda (GPL) Degree College",
+    "address": "Nirmal Road, Bhainsa - 504 103",
+    "district": "Adilabad",
+    "type": "UNDER GRADUATE COLLEGES",
+    "office": "08752-321214",
+    "phoneNumber": "Not Available"
+  },
+  {
+    "collegeName": "Government Degree College",
+    "address": "Mancherial",
+    "district": "Adilabad",
+    "type": "POST GRADUATE COLLEGE",
+    "office": "08736-252041",
+    "phoneNumber": "Not available"
+  },
+  {
+    "collegeName": "Government Degree College",
+    "address": "Nirmal - 506 106",
+    "district": "Adilabad",
+    "type": "POST GRADUATE COLLEGE",
+    "office": "08734-242167",
+    "phoneNumber": "Not available"
+  },
+  {
+    "collegeName": "Government Degree College",
+    "address": "Bellampalli-504 251",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "Not Available",
-    "phoneNumber": "Not Available"
+    "phoneNumber": "9849669923"
   },
   {
-    "collegeName": "Gokuldas Purushothamdas Ladda (GPL) Degree College",
-    "address": "Nirmal Road, Bhainsa - 504 103",
+    "collegeName": "Government Degree College",
+    "address": "Chennoor - 504 201",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
-    "office": "08752-321214",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Gokuldas Purushothamdas Ladda (GPL) Degree College",
-    "address": "Nirmal Road, Bhainsa - 504 103",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08752-321214",
+    "office": "08737-296206",
     "phoneNumber": "Not Available"
   },
   {
@@ -737,14 +401,6 @@
   },
   {
     "collegeName": "Government Degree College",
-    "address": "Chennoor - 504 201",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08737-296206",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College",
     "address": "Nirmal - 504 106",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
@@ -760,110 +416,6 @@
     "phoneNumber": "9948328740"
   },
   {
-    "collegeName": "Government Degree College",
-    "address": "Bellampalli-504 251",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9849669923"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Nirmal - 506 106",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08734-242167",
-    "phoneNumber": "Not available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Utnoor",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9948328740"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Nirmal - 506 106",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08734-242167",
-    "phoneNumber": "Not available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Nirmal - 504 106",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08734-242167",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Mancherial",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08736-252041",
-    "phoneNumber": "Not available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-252041",
-    "phoneNumber": "9848276919"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Luxettipet",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Chennoor - 504 201",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08737-296206",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Bellampalli-504 251",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9849669923"
-  },
-  {
-    "collegeName": "Government Degree College",
-    "address": "Mancherial",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08736-252041",
-    "phoneNumber": "Not available"
-  },
-  {
-    "collegeName": "Government Degree College for Men",
-    "address": "Adilabad - 504 001",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-226995",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College for Men",
-    "address": "Adilabad - 504 001",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-226995",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "Government Degree College for Men",
     "address": "Adilabad - 504 001",
     "district": "Adilabad",
@@ -875,25 +427,9 @@
     "collegeName": "Government Degree College for Men",
     "address": "Adilabad - 504 001",
     "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08732-226370",
-    "phoneNumber": "Not available"
-  },
-  {
-    "collegeName": "Government Degree College for Women",
-    "address": "Mancherial",
-    "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
+    "office": "08732-226995",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Government Degree College for Women",
-    "address": "Adilabad - 504 001",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08732-225772",
-    "phoneNumber": "Not available"
   },
   {
     "collegeName": "Government Degree College for Women",
@@ -920,36 +456,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Government Degree College for Women",
-    "address": "Adilabad - 504 101",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-226370",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "Govt. College for Teacher Education (TW)",
     "address": "Laltekdi, Utnoor",
     "district": "Adilabad",
     "type": "Colleges of Education",
     "office": "Not available",
     "phoneNumber": "9440902151"
-  },
-  {
-    "collegeName": "Govt. College for Teacher Education (TW)",
-    "address": "Laltekdi, Utnoor",
-    "district": "Adilabad",
-    "type": "Colleges of Education",
-    "office": "Not available",
-    "phoneNumber": "9440902151"
-  },
-  {
-    "collegeName": "Govt. Degree College",
-    "address": "Mulugu",
-    "district": "Mulugu",
-    "type": "P.G. College",
-    "office": "Not Available",
-    "phoneNumber": "9948987090"
   },
   {
     "collegeName": "Govt. Degree College",
@@ -968,36 +480,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Govt. Degree College for Women",
-    "address": "Nirmal - 504 106",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "Indira Degree College",
     "address": "H.No. 1-15-31 & 32, Balaji Nagar, Sirpur Khagaznagar - 504 296",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08738-238668",
     "phoneNumber": "9966002860"
-  },
-  {
-    "collegeName": "Indira Degree College",
-    "address": "H.No. 1-15-31 & 32, Balaji Nagar, Sirpur Khagaznagar - 504 296",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08738-238668",
-    "phoneNumber": "9966002860"
-  },
-  {
-    "collegeName": "JMJ Degree College for Women",
-    "address": "Karungapuram, Peddapendial",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "08711-243143",
-    "phoneNumber": "9440387214"
   },
   {
     "collegeName": "JMJ Degree College for Women",
@@ -1016,36 +504,12 @@
     "phoneNumber": "9440096589"
   },
   {
-    "collegeName": "Jadhav Manik Rao Degree College",
-    "address": "Indravelly",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9440009026",
-    "phoneNumber": "9440096589"
-  },
-  {
     "collegeName": "Jangaon College of Education",
     "address": "Nadigonda",
     "district": "Jangaon - 506 244",
     "type": "College of Education",
     "office": "08716-220240",
     "phoneNumber": "9848709353"
-  },
-  {
-    "collegeName": "Jangaon College of Education",
-    "address": "Nadigonda",
-    "district": "Jangaon - 506 244",
-    "type": "College of Education",
-    "office": "08716-220240",
-    "phoneNumber": "9848709353"
-  },
-  {
-    "collegeName": "Jangaon Institute of Pharmaceutical Sciences",
-    "address": "Yeshwanthapur, Jangaon - 506 167",
-    "district": "Jangaon",
-    "type": "Pharmacy College",
-    "office": "0870-320370",
-    "phoneNumber": "9441039558"
   },
   {
     "collegeName": "Jangaon Institute of Pharmaceutical Sciences",
@@ -1064,34 +528,10 @@
     "phoneNumber": "9440334455"
   },
   {
-    "collegeName": "Jaya Institute of Technology & Science for Women",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "Engineering College",
-    "office": "Not Available",
-    "phoneNumber": "9440334455"
-  },
-  {
     "collegeName": "Jayamukhi College of Educatiuon",
     "address": "Narsampet",
     "district": "Warangal",
     "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "9849626969"
-  },
-  {
-    "collegeName": "Jayamukhi College of Educatiuon",
-    "address": "Narsampet",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "9849626969"
-  },
-  {
-    "collegeName": "Jayamukhi College of Pharmacy",
-    "address": "Maqdumpur, Narsampet - 506 332",
-    "district": "Warangal",
-    "type": "Pharmacy College",
     "office": "Not Available",
     "phoneNumber": "9849626969"
   },
@@ -1112,36 +552,12 @@
     "phoneNumber": "9849626969"
   },
   {
-    "collegeName": "Jayamukhi Instt. of Mgt. Scs.",
-    "address": "Maqdumpur, Narsampet",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "08718-222503",
-    "phoneNumber": "9849626969"
-  },
-  {
     "collegeName": "KITS Yerragattu Hillocks",
     "address": "Hasanparthy",
     "district": "Warangal",
     "type": "MBA College",
     "office": "Not Available",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "KITS Yerragattu Hillocks",
-    "address": "Hasanparthy",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "KNR Degree College",
-    "address": "Khanapur",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08730-200160",
-    "phoneNumber": "9949243456"
   },
   {
     "collegeName": "KNR Degree College",
@@ -1160,36 +576,12 @@
     "phoneNumber": "9848586548"
   },
   {
-    "collegeName": "KV Ramana Memorial Degree College",
-    "address": "Rajiv Gandhi Centre, VR Puram (V&M)",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "9848586548"
-  },
-  {
     "collegeName": "Kakatiya College of Comp. Sciences",
     "address": "23-6-203/2, Hunter Road, Warangal",
     "district": "Warangal",
     "type": "MBA College",
     "office": "0870-2524170",
     "phoneNumber": "9866319580"
-  },
-  {
-    "collegeName": "Kakatiya College of Comp. Sciences",
-    "address": "23-6-203/2, Hunter Road, Warangal",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "0870-2524170",
-    "phoneNumber": "9866319580"
-  },
-  {
-    "collegeName": "Kakatiya College of Computer Science",
-    "address": "Hunter Road, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "0870-2524169",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Kakatiya College of Computer Science",
@@ -1208,36 +600,12 @@
     "phoneNumber": " Not Available"
   },
   {
-    "collegeName": "Kakatiya Govt. College",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2577509",
-    "phoneNumber": " Not Available"
-  },
-  {
     "collegeName": "Kakatiya Institute of Pharmaceutical Sciences",
     "address": "Pembarthy (V) - 506 331",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-645112",
     "phoneNumber": "9866178276"
-  },
-  {
-    "collegeName": "Kakatiya Institute of Pharmaceutical Sciences",
-    "address": "Pembarthy (V) - 506 331",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-645112",
-    "phoneNumber": "9866178276"
-  },
-  {
-    "collegeName": "Kakatiya Institute of Technology & Science",
-    "address": "Hasanparthy",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2564888",
-    "phoneNumber": "9866900003"
   },
   {
     "collegeName": "Kakatiya Institute of Technology & Science",
@@ -1256,36 +624,12 @@
     "phoneNumber": "9866900003"
   },
   {
-    "collegeName": "Kakatiya Institute of Technology & Science",
-    "address": "Yerragattu Hillock, Hasanparthy - 506 015",
-    "district": "Warangal",
-    "type": "MCA College",
-    "office": "0870-2564888",
-    "phoneNumber": "9440775866"
-  },
-  {
     "collegeName": "Kakatiya Institute of Techonology & Science",
     "address": "Opp. Yerragattu Hillock, Bheemaram, Hasanparthy-506 015",
     "district": "Warangal",
     "type": "Engineering College",
     "office": "0870-2564888",
     "phoneNumber": "9440775866"
-  },
-  {
-    "collegeName": "Kakatiya Institute of Techonology & Science",
-    "address": "Opp. Yerragattu Hillock, Bheemaram, Hasanparthy-506 015",
-    "district": "Warangal",
-    "type": "Engineering College",
-    "office": "0870-2564888",
-    "phoneNumber": "9440775866"
-  },
-  {
-    "collegeName": "Kakatiya Mahila Degree College (PG)",
-    "address": " 1-7-690/21&22, Loyal Arcade, Subedari, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0871-2511045",
-    "phoneNumber": "9985552030"
   },
   {
     "collegeName": "Kakatiya Mahila Degree College (PG)",
@@ -1304,20 +648,12 @@
     "phoneNumber": "9866625380"
   },
   {
-    "collegeName": "Karimala Sai Degree College",
-    "address": "5-66/2, Uthkoor, Luxettipet - 504 215, Sirpur Khagaznagar - 504 296",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08739-233620",
-    "phoneNumber": "9866625380"
-  },
-  {
-    "collegeName": "Komaram Bheem Degree College",
-    "address": "Gundala",
+    "collegeName": "Kavitha Memorial",
+    "address": "Khammam",
     "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": " 9848586548"
+    "type": "Degree",
+    "office": "not available",
+    "phoneNumber": "not available"
   },
   {
     "collegeName": "Komaram Bheem Degree College",
@@ -1336,22 +672,6 @@
     "phoneNumber": "9848231831"
   },
   {
-    "collegeName": "Krishnaveni Degree College",
-    "address": "Vidyanagar, Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9848231831"
-  },
-  {
-    "collegeName": "LMR Degree College",
-    "address": "Kannapur, Kadam",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9490026341",
-    "phoneNumber": "8985449469"
-  },
-  {
     "collegeName": "LMR Degree College",
     "address": "Kannapur, Kadam",
     "district": "Adilabad",
@@ -1364,22 +684,6 @@
     "address": "SVP Road, Near Mulugu X Roads, Wgl - 506 007",
     "district": "Warangal",
     "type": "P.G. College",
-    "office": "0870-2432880",
-    "phoneNumber": "9849617999"
-  },
-  {
-    "collegeName": "Lal Bahadur College",
-    "address": "SVP Road, Near Mulugu X Roads, Wgl - 506 007",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2432880",
-    "phoneNumber": "9849617999"
-  },
-  {
-    "collegeName": "Lal Bahadur P.G. College",
-    "address": "S.V.P. Road, Warangal",
-    "district": "Warangal",
-    "type": "MBA College",
     "office": "0870-2432880",
     "phoneNumber": "9849617999"
   },
@@ -1400,36 +704,12 @@
     "phoneNumber": "9849617999"
   },
   {
-    "collegeName": "Lal Bahadur PG College",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "MCA College",
-    "office": "Not Available",
-    "phoneNumber": "9849617999"
-  },
-  {
     "collegeName": "Lalbahadur College of Education",
     "address": "Maqdumpura, S.V.P. Road",
     "district": "Warangal",
     "type": "College of Education",
     "office": "0870-244144",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Lalbahadur College of Education",
-    "address": "Maqdumpura, S.V.P. Road",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "0870-244144",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "MIMS Degree College",
-    "address": "Mancherial",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "Not available",
-    "phoneNumber": "9849525440"
   },
   {
     "collegeName": "MIMS Degree College",
@@ -1448,36 +728,12 @@
     "phoneNumber": "9849437138"
   },
   {
-    "collegeName": "Maharshi Degree College",
-    "address": "Main Road, Mulugu",
-    "district": "Mulugu",
-    "type": "P.G. College",
-    "office": "9394183342",
-    "phoneNumber": "9849437138"
-  },
-  {
     "collegeName": "Maharshi Institute of Pharmaceutical Sci.",
     "address": "Velikatte (V), Thorrur (M), Warangal",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "Not Available",
     "phoneNumber": "9440860069"
-  },
-  {
-    "collegeName": "Maharshi Institute of Pharmaceutical Sci.",
-    "address": "Velikatte (V), Thorrur (M), Warangal",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9440860069"
-  },
-  {
-    "collegeName": "Mahboobia Panjetan PG College",
-    "address": "Jaanipeereelu, Warangal",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9949290227"
   },
   {
     "collegeName": "Mahboobia Panjetan PG College",
@@ -1496,36 +752,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Maheswara College of Education",
-    "address": "Maheswaram, Narsampet",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "Mancherial Institute of Mathematical Sciences",
     "address": "Mancherial - 504 208",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08736-250016",
     "phoneNumber": "9849525440"
-  },
-  {
-    "collegeName": "Mancherial Institute of Mathematical Sciences",
-    "address": "Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-250016",
-    "phoneNumber": "9849525440"
-  },
-  {
-    "collegeName": "Margadarshi College of Education",
-    "address": "Mahabubabad - 506 104",
-    "district": "Mahabubabad",
-    "type": "College of Education",
-    "office": "08719-240373",
-    "phoneNumber": "9396720599"
   },
   {
     "collegeName": "Margadarshi College of Education",
@@ -1544,22 +776,6 @@
     "phoneNumber": "9849221421"
   },
   {
-    "collegeName": "Masterji Degree  & PG College",
-    "address": "Hunter Road, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2510728",
-    "phoneNumber": "9849221421"
-  },
-  {
-    "collegeName": "Masterji Instt. of Info Tech",
-    "address": "Madikondal",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9849652964"
-  },
-  {
     "collegeName": "Masterji Instt. of Info Tech",
     "address": "Madikondal",
     "district": "Warangal",
@@ -1574,22 +790,6 @@
     "type": "College of Education",
     "office": "08719-243899",
     "phoneNumber": "9866460286"
-  },
-  {
-    "collegeName": "Mother Theresa College of Education",
-    "address": "Yellandu Road, Mahabubabad - 506 101",
-    "district": "Mahabubabad",
-    "type": "College of Education",
-    "office": "08719-243899",
-    "phoneNumber": "9866460286"
-  },
-  {
-    "collegeName": "Muduganti Suryamma College of Education",
-    "address": "7-93/1, Rajempet, Asifabad - 504 293",
-    "district": "Adilabad",
-    "type": "Colleges of Education",
-    "office": "98496-20210",
-    "phoneNumber": "9849620210"
   },
   {
     "collegeName": "Muduganti Suryamma College of Education",
@@ -1609,35 +809,11 @@
   },
   {
     "collegeName": "Mukharam Agarwal Memorial Mancherial Vidyaniketan Degree College",
-    "address": "Mancherial-504 208",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "9948484411",
-    "phoneNumber": "9949801637"
-  },
-  {
-    "collegeName": "Mukharam Agarwal Memorial Mancherial Vidyaniketan Degree College",
     "address": "Godavari Road, Mancherial - 504 208",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08736-252140",
     "phoneNumber": "9949801637"
-  },
-  {
-    "collegeName": "Mukharam Agarwal Memorial Mancherial Vidyaniketan Degree College",
-    "address": "Godavari Road, Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-252140",
-    "phoneNumber": "9949801637"
-  },
-  {
-    "collegeName": "Mukharam Agarwal Memorial Mancherial Vidyaniketan Degree College for Women",
-    "address": "Ganga Reddy Road, Mancherial - 504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9849237808"
   },
   {
     "collegeName": "Mukharam Agarwal Memorial Mancherial Vidyaniketan Degree College for Women",
@@ -1656,22 +832,6 @@
     "phoneNumber": "9949123213"
   },
   {
-    "collegeName": "NBR Degree College",
-    "address": "Shastri Nagar, Mancherial Road, Nirmal - 504 106",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9396672121",
-    "phoneNumber": "9949123213"
-  },
-  {
-    "collegeName": "Nalanda Degree College",
-    "address": "Mavla Road, Adilabad-504 001",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-232175",
-    "phoneNumber": "9848125053"
-  },
-  {
     "collegeName": "Nalanda Degree College",
     "address": "Adilabad",
     "district": "Adilabad",
@@ -1686,22 +846,6 @@
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08732-232175",
     "phoneNumber": "9848125053"
-  },
-  {
-    "collegeName": "Nalanda Degree College",
-    "address": "Adilabad",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08732-232175",
-    "phoneNumber": "9848125053"
-  },
-  {
-    "collegeName": "Nandana Degree College",
-    "address": "H.No. 5-11-718, Priyadarshini Nagar, Nirmal",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9347027906",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Nandana Degree College",
@@ -1720,38 +864,6 @@
     "phoneNumber": "9393022099"
   },
   {
-    "collegeName": "Nethaji Instt. of Pharmacy. Scs.",
-    "address": "Somidi, Kazipet - 506 003",
-    "district": "Kazipet",
-    "type": "Pharmacy College",
-    "office": "0870-3206564",
-    "phoneNumber": "9393022099"
-  },
-  {
-    "collegeName": "New Science Degree & PG College",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "New Science Degree & PG College",
-    "address": "1-7-885, Lane Beside Hotel Raj, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2511310",
-    "phoneNumber": "9246895795"
-  },
-  {
-    "collegeName": "New Science Degree & PG College",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "New Science Degree & PG College",
     "address": "Hunter Road, Hanamkonda",
     "district": "Hanamkonda",
@@ -1761,10 +873,10 @@
   },
   {
     "collegeName": "New Science Degree & PG College",
-    "address": "Hunter Road, Hanamkonda",
+    "address": "Hanamkonda",
     "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "0870-2511310",
+    "type": "MCA College",
+    "office": "Not Available",
     "phoneNumber": "Not Available"
   },
   {
@@ -1784,36 +896,12 @@
     "phoneNumber": "9705291333"
   },
   {
-    "collegeName": "Orugallu Degree College",
-    "address": "D.No. 3-18/4, Enkoor (V&M)",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "08744-277277",
-    "phoneNumber": "9705291333"
-  },
-  {
     "collegeName": "Panchseel College of Education",
     "address": "Street Gajulpet, Nirmal - 504 106",
     "district": "Adilabad",
     "type": "Colleges of Education",
     "office": "08734-245951",
     "phoneNumber": "9848045816"
-  },
-  {
-    "collegeName": "Panchseel College of Education",
-    "address": "Street Gajulpet, Nirmal - 504 106",
-    "district": "Adilabad",
-    "type": "Colleges of Education",
-    "office": "08734-245951",
-    "phoneNumber": "9848045816"
-  },
-  {
-    "collegeName": "Pathfinder Institute of Pharmacy Education & Research",
-    "address": "Near Warangal Airport, Warangal",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9908829988"
   },
   {
     "collegeName": "Pathfinder Institute of Pharmacy Education & Research",
@@ -1832,36 +920,12 @@
     "phoneNumber": " Not Available"
   },
   {
-    "collegeName": "Pingle Govt. College for Women",
-    "address": "Waddepally, Warangal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2547744",
-    "phoneNumber": " Not Available"
-  },
-  {
     "collegeName": "Pragathi School of Business",
     "address": "Hunter Road, Warangal",
     "district": "Warangal",
     "type": "MBA College",
     "office": "Not Available",
     "phoneNumber": "9246895177"
-  },
-  {
-    "collegeName": "Pragathi School of Business",
-    "address": "Hunter Road, Warangal",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9246895177"
-  },
-  {
-    "collegeName": "Pragathi School of Info Tech",
-    "address": "Hunter Road, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Pragathi School of Info Tech",
@@ -1880,36 +944,12 @@
     "phoneNumber": "9849050305"
   },
   {
-    "collegeName": "Prathibha Institute of Pharm. Sciences",
-    "address": "Yellapur",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9849050305"
-  },
-  {
     "collegeName": "Prerana Degree College",
     "address": "Block No. 12, Islampura, Mancherial",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08736-254622",
     "phoneNumber": "9704646188"
-  },
-  {
-    "collegeName": "Prerana Degree College",
-    "address": "Block No. 12, Islampura, Mancherial",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-254622",
-    "phoneNumber": "9704646188"
-  },
-  {
-    "collegeName": "R.D. Women's Degree College",
-    "address": "Kishanpura, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "Not Available",
-    "phoneNumber": "9949086752"
   },
   {
     "collegeName": "R.D. Women's Degree College",
@@ -1928,36 +968,12 @@
     "phoneNumber": "9989304292"
   },
   {
-    "collegeName": "R.K.P. Degree College",
-    "address": "Primary School Building, A-Zone, Ramakrishnapuram",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-228651",
-    "phoneNumber": "9989304292"
-  },
-  {
     "collegeName": "Rahman's College of Education",
     "address": "Yeshwanthapur, Jangaon - 506 167",
     "district": "Jangaon",
     "type": "College of Education",
     "office": "08716-223360",
     "phoneNumber": "9247059794"
-  },
-  {
-    "collegeName": "Rahman's College of Education",
-    "address": "Yeshwanthapur, Jangaon - 506 167",
-    "district": "Jangaon",
-    "type": "College of Education",
-    "office": "08716-223360",
-    "phoneNumber": "9247059794"
-  },
-  {
-    "collegeName": "Rebbena Arts & Science Degree College",
-    "address": "Rebbena",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9030956515"
   },
   {
     "collegeName": "Rebbena Arts & Science Degree College",
@@ -1976,36 +992,12 @@
     "phoneNumber": "9346611870"
   },
   {
-    "collegeName": "S.R. Degree & P.G. College",
-    "address": "Balasmudram, Hanakonda",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-5587713",
-    "phoneNumber": "9346611870"
-  },
-  {
     "collegeName": "S.V.S.A. P.G. College",
     "address": "Warangal",
     "district": "Warangal",
     "type": "P.G. College",
     "office": "0870-2562477",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "S.V.S.A. P.G. College",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2562477",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "SKE Degree College",
-    "address": "Sirpur Kaghaznagar-504 296",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08738-238969",
-    "phoneNumber": "9866776504"
   },
   {
     "collegeName": "SKE Degree College",
@@ -2024,22 +1016,6 @@
     "phoneNumber": "9849736923"
   },
   {
-    "collegeName": "SR College of Pharmacy",
-    "address": "Ananthasagar(V), Hasanparthy(M) - 506 371",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2520377",
-    "phoneNumber": "9849736923"
-  },
-  {
-    "collegeName": "SRL Institute of Pharm. Sciences",
-    "address": "Kummarigudem, Warangal - 509 142",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-6451968",
-    "phoneNumber": "9866161848"
-  },
-  {
     "collegeName": "SRL Institute of Pharm. Sciences",
     "address": "Kummarigudem, Warangal - 509 142",
     "district": "Warangal",
@@ -2056,35 +1032,11 @@
     "phoneNumber": "9989169294"
   },
   {
-    "collegeName": "SVG Degree College",
-    "address": "Laxman Chanda, Adilabad-504 106",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08734-225531",
-    "phoneNumber": "9989169294"
-  },
-  {
     "collegeName": "SVS Institute of Pharmacy",
     "address": "Bheemaram - 506 015",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-2438050",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "SVS Institute of Pharmacy",
-    "address": "Bheemaram - 506 015",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2438050",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "SVS P.G. College",
-    "address": "Ramaram",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "0870-6560834",
     "phoneNumber": "Not Available"
   },
   {
@@ -2104,36 +1056,12 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "SVS P.G. College, Ramaram",
-    "address": "Hanamkonda",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2438050",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "SVS PG College",
     "address": "Bheemaram",
     "district": "Warangal",
     "type": "MBA College",
     "office": "Not Available",
     "phoneNumber": "9246891601"
-  },
-  {
-    "collegeName": "SVS PG College",
-    "address": "Bheemaram",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9246891601"
-  },
-  {
-    "collegeName": "Sadhana Degree College",
-    "address": "Muthyampet (V), Dandepally (M), Adilabad Dist",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9550372740"
   },
   {
     "collegeName": "Sadhana Degree College",
@@ -2152,36 +1080,12 @@
     "phoneNumber": "9885955501"
   },
   {
-    "collegeName": "Sahasra Institute of Pharmaceutical Sciences",
-    "address": "Near Ayyappa Swamy Temple, Mulugu Road, Warangal - 506 007",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2543666",
-    "phoneNumber": "9885955501"
-  },
-  {
     "collegeName": "Sai Teja College of Education",
     "address": "Jangaon - 506 167",
     "district": "Jangaon",
     "type": "College of Education",
     "office": "9394353757",
     "phoneNumber": "9848367777"
-  },
-  {
-    "collegeName": "Sai Teja College of Education",
-    "address": "Jangaon - 506 167",
-    "district": "Jangaon",
-    "type": "College of Education",
-    "office": "9394353757",
-    "phoneNumber": "9848367777"
-  },
-  {
-    "collegeName": "Sai Teja Degree College",
-    "address": "D.No. 3-189/6, Sadasivapet, Kowtala (V&M), Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Sai Teja Degree College",
@@ -2200,22 +1104,6 @@
     "phoneNumber": " Not Available"
   },
   {
-    "collegeName": "Samatha Degree College",
-    "address": "Thorrur",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "Not Available",
-    "phoneNumber": " Not Available"
-  },
-  {
-    "collegeName": "Shantiniketan Degree College",
-    "address": "Near Water Tank, Mancherial-504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-252761",
-    "phoneNumber": "9989770893"
-  },
-  {
     "collegeName": "Shantiniketan Degree College",
     "address": "Near Water Tank, Mancherial-504 208",
     "district": "Adilabad",
@@ -2230,22 +1118,6 @@
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08736-257994",
     "phoneNumber": "9908302500"
-  },
-  {
-    "collegeName": "Shivani Arts & Science Degree",
-    "address": "College, Maruthi Nagar, Mandamarri",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-257994",
-    "phoneNumber": "9908302500"
-  },
-  {
-    "collegeName": "Siddhartha Degree College",
-    "address": "Narsampet",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0818-232330",
-    "phoneNumber": "9849555316"
   },
   {
     "collegeName": "Siddhartha Degree College",
@@ -2272,44 +1144,12 @@
     "phoneNumber": "9390311038"
   },
   {
-    "collegeName": "Singareni Mahila Degree College",
-    "address": "Near Old Bus Stand, Mandamarri-504 231",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-257422",
-    "phoneNumber": "9390311038"
-  },
-  {
-    "collegeName": "Singareni Mahila Degree College",
-    "address": "Andugulapet, Mandamarri",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08736-257422",
-    "phoneNumber": "9939031138"
-  },
-  {
     "collegeName": "Sravnathi College of Education",
     "address": "Dharmaram",
     "district": "Warangal",
     "type": "College of Education",
     "office": "0870-2581452",
     "phoneNumber": "9849229731"
-  },
-  {
-    "collegeName": "Sravnathi College of Education",
-    "address": "Dharmaram",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "0870-2581452",
-    "phoneNumber": "9849229731"
-  },
-  {
-    "collegeName": "Sreernidhi Degree College",
-    "address": "D.No. 1-493/1/E, Amburupeta Road, Madhira (M)",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "9704419444",
-    "phoneNumber": "9908705752"
   },
   {
     "collegeName": "Sreernidhi Degree College",
@@ -2328,36 +1168,12 @@
     "phoneNumber": " Not Available"
   },
   {
-    "collegeName": "Sri Arunodaya Degree & PG College",
-    "address": "Amba Complex, Bheemaram-506 015",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "0870-2577655",
-    "phoneNumber": " Not Available"
-  },
-  {
     "collegeName": "Sri Aurobindo College of Education",
     "address": "Jangaon",
     "district": "Jangaon",
     "type": "College of Education",
     "office": "08716-220330/206",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Aurobindo College of Education",
-    "address": "Jangaon",
-    "district": "Jangaon",
-    "type": "College of Education",
-    "office": "08716-220330/206",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Bhagavathi Degree College",
-    "address": "Near Police Station, H.No. 1-1/1, Utnoor-Luxettipet",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08739-233635",
-    "phoneNumber": "9390310171"
   },
   {
     "collegeName": "Sri Bhagavathi Degree College",
@@ -2384,44 +1200,12 @@
     "phoneNumber": "9849630122"
   },
   {
-    "collegeName": "Sri Chaitanya Degree College",
-    "address": "Rajampet, Asifabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08733-277155",
-    "phoneNumber": "9440066724"
-  },
-  {
-    "collegeName": "Sri Chaitanya Degree College",
-    "address": "D.No. 3-17, Main Road, Kowtala (V&M), Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9866475444",
-    "phoneNumber": "9849630122"
-  },
-  {
     "collegeName": "Sri Chaitanya Gowthami Degree College",
     "address": "Tekulapalli",
     "district": "Khammam",
     "type": "Degree College",
     "office": "Not Available",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Chaitanya Gowthami Degree College",
-    "address": "Tekulapalli",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Gayathri College of Management Science",
-    "address": "Opp. Lane to Govt. ITI, Mulugu 'X' Road - 507 002",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9396993328"
   },
   {
     "collegeName": "Sri Gayathri College of Management Science",
@@ -2440,22 +1224,6 @@
     "phoneNumber": " Not Available"
   },
   {
-    "collegeName": "Sri Gayathri Degree College",
-    "address": "Ramnagar, HNK",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "Not Available",
-    "phoneNumber": " Not Available"
-  },
-  {
-    "collegeName": "Sri Kakatiya Institute of Pharmaceutical Sciences",
-    "address": "Unikicherla, Warangal - 506 370",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "Not Available",
-    "phoneNumber": "9246895795"
-  },
-  {
     "collegeName": "Sri Kakatiya Institute of Pharmaceutical Sciences",
     "address": "Unikicherla, Warangal - 506 370",
     "district": "Warangal",
@@ -2472,32 +1240,8 @@
     "phoneNumber": "9490243151"
   },
   {
-    "collegeName": "Sri Pulaji Baba Degree College",
-    "address": "Near IB Chowk, Utnoor",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08731-275230",
-    "phoneNumber": "9490243151"
-  },
-  {
     "collegeName": "Sri Pulipati Prasad Arts & Science Degree College",
     "address": "Sri Balaji Nagar, Wyra Road, Ammapalem (V), Konijerla (M)",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Pulipati Prasad Arts & Science Degree College",
-    "address": "Sri Balaji Nagar, Wyra Road, Ammapalem (V), Konijerla (M)",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Ramana Gowthami Degree College",
-    "address": "Near Govt. Jr. College, Wazeed (V&M)",
     "district": "Khammam",
     "type": "Degree College",
     "office": "Not Available",
@@ -2528,30 +1272,6 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Sri Sai Balaji College of Education",
-    "address": "Thorrur",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Sai Balaji College of Education",
-    "address": "Thorrur",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Sri Shivani College of Pharmacy",
-    "address": "Mulugu Road, Warangal - 506 007",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2433700",
-    "phoneNumber": "9849058791"
-  },
-  {
     "collegeName": "Sri Shivani College of Pharmacy",
     "address": "Mulugu Road, Warangal - 506 007",
     "district": "Warangal",
@@ -2576,44 +1296,12 @@
     "phoneNumber": "9949285911"
   },
   {
-    "collegeName": "Sri Vikas Degree College",
-    "address": "Karepally",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "9949285911"
-  },
-  {
-    "collegeName": "Sri Vikas Degree College",
-    "address": "Sirpur (T)",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9949349568"
-  },
-  {
     "collegeName": "Sri Vivekananda College of Education",
     "address": "Kesamudram Road",
     "district": " Mahabubabad",
     "type": "College of Education",
     "office": "Not Available",
     "phoneNumber": "9440107017"
-  },
-  {
-    "collegeName": "Sri Vivekananda College of Education",
-    "address": "Kesamudram Road",
-    "district": " Mahabubabad",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "9440107017"
-  },
-  {
-    "collegeName": "St. John MBA College",
-    "address": "Yellapur",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "St. John MBA College",
@@ -2632,22 +1320,6 @@
     "phoneNumber": "9866153134"
   },
   {
-    "collegeName": "St. John P.G. College",
-    "address": "Yellapur",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "0870-2817241",
-    "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "St. John School of Mgt.",
-    "address": "Yellapur",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9866153134"
-  },
-  {
     "collegeName": "St. John School of Mgt.",
     "address": "Yellapur",
     "district": "Warangal",
@@ -2660,30 +1332,6 @@
     "address": "Rampoor, Warangal - 506 151",
     "district": "Warangal",
     "type": "MBA College",
-    "office": "08711-223225",
-    "phoneNumber": "9246895798"
-  },
-  {
-    "collegeName": "St. Joseph P.G. College",
-    "address": "Rampoor, Warangal - 506 151",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "08711-223225",
-    "phoneNumber": "9246895798"
-  },
-  {
-    "collegeName": "St. Joseph's  PG College",
-    "address": "Rampoor - 506 151",
-    "district": "Warangal",
-    "type": "MCA College",
-    "office": "08711-223225",
-    "phoneNumber": "9246895798"
-  },
-  {
-    "collegeName": "St. Joseph's  PG College",
-    "address": "Rampoor - 506 151",
-    "district": "Warangal",
-    "type": "MCA College",
     "office": "08711-223225",
     "phoneNumber": "9246895798"
   },
@@ -2712,35 +1360,11 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "St. Mary's PG College (MCA)",
-    "address": "Jangaon",
-    "district": "Jangaon",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
     "collegeName": "St. Mary’s PG (MCA) College",
     "address": "Jangaon",
     "district": "Jangaon",
     "type": "MCA College",
     "office": "220183/221980",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "St. Mary’s PG (MCA) College",
-    "address": "Jangaon",
-    "district": "Jangaon",
-    "type": "MCA College",
-    "office": "220183/221980",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "St. Peter's College of Education",
-    "address": "Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "College of Education",
-    "office": "0870-2456388",
     "phoneNumber": "Not Available"
   },
   {
@@ -2760,44 +1384,12 @@
     "phoneNumber": "9000001957"
   },
   {
-    "collegeName": "St. Peter's Institute of Pharm Sciences",
-    "address": "1-2-1211/1, Vidyanagar, Hanamkonda - 506 001",
-    "district": "Hanamkonda",
-    "type": "Pharmacy College",
-    "office": "0870-2256303",
-    "phoneNumber": "9000001957"
-  },
-  {
     "collegeName": "St.John College of Pharmacy",
     "address": "Yellapur(V), Hasanparthy (M) - 506 001",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-2817241",
     "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "St.John College of Pharmacy",
-    "address": "Yellapur(V), Hasanparthy (M) - 506 001",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2817241",
-    "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "Swarna Bharathi Institute of Science and Technology",
-    "address": "pakabanda bazar",
-    "district": "Khammam",
-    "type": "Engineering college",
-    "office": "9988998991",
-    "phoneNumber": "9347147390"
-  },
-  {
-    "collegeName": "Swathi Women's Degree College",
-    "address": "D.No. 1-23/1A, CCC \\\"x",
-    "district": "Not Available",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
-    "phoneNumber": "9866622258"
   },
   {
     "collegeName": "Swathi Women's Degree College",
@@ -2813,22 +1405,6 @@
     "district": "Adilabad",
     "type": "POST GRADUATE COLLEGE",
     "office": "Not available",
-    "phoneNumber": "9542404630"
-  },
-  {
-    "collegeName": "Swetha Degree College",
-    "address": "Chennur",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "Not available",
-    "phoneNumber": "9542404630"
-  },
-  {
-    "collegeName": "Swetha Degree Collge",
-    "address": "Near Bus Stand, Chennoor",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "Not Available",
     "phoneNumber": "9542404630"
   },
   {
@@ -2848,36 +1424,12 @@
     "phoneNumber": "9866107550"
   },
   {
-    "collegeName": "Talla Padmavathi College of Education",
-    "address": "Warangal",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "0870-2433773",
-    "phoneNumber": "9866107550"
-  },
-  {
     "collegeName": "Talla Padmavathi College of Pharmacy",
     "address": "Orus, Warangal - 506 002",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-2434057",
     "phoneNumber": "9849058512"
-  },
-  {
-    "collegeName": "Talla Padmavathi College of Pharmacy",
-    "address": "Orus, Warangal - 506 002",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2434057",
-    "phoneNumber": "9849058512"
-  },
-  {
-    "collegeName": "Thorrur College of Education",
-    "address": "Thorrur",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "9441027268"
   },
   {
     "collegeName": "Thorrur College of Education",
@@ -2896,22 +1448,6 @@
     "phoneNumber": "Not Available"
   },
   {
-    "collegeName": "Thushara P.G. School of Info. Sci.",
-    "address": "Rampoor",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "V.R. College of  Mg. & Info. Tech",
-    "address": "Bhattupally Road, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "Not Available",
-    "phoneNumber": "9440271380"
-  },
-  {
     "collegeName": "V.R. College of  Mg. & Info. Tech",
     "address": "Bhattupally Road, Hanamkonda",
     "district": "Hanamkonda",
@@ -2926,22 +1462,6 @@
     "type": "Degree College",
     "office": "08740-254117",
     "phoneNumber": "9885916453"
-  },
-  {
-    "collegeName": "VKDVS Raju Degree College",
-    "address": "Aswaraopet - 507 301",
-    "district": "Bhadradri Kothagudem",
-    "type": "Degree College",
-    "office": "08740-254117",
-    "phoneNumber": "9885916453"
-  },
-  {
-    "collegeName": "Vaagdevi College of Education",
-    "address": "Parkal",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "08713-242439",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Vaagdevi College of Education",
@@ -2968,30 +1488,6 @@
     "phoneNumber": "9849058595"
   },
   {
-    "collegeName": "Vaagdevi College of Engineering",
-    "address": "Bollikunta - 506 005",
-    "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "0870-2865183",
-    "phoneNumber": "9849058595"
-  },
-  {
-    "collegeName": "Vaagdevi College of Engineering",
-    "address": "Bollikunta, Warangal - 506 005",
-    "district": "Warangal",
-    "type": "MCA College",
-    "office": "0870-2865183",
-    "phoneNumber": "9849058595"
-  },
-  {
-    "collegeName": "Vaagdevi College of Pharmacy",
-    "address": "2-2-457/3, Ramnagar, Hanamkonda - 506 001",
-    "district": "Hanamkonda",
-    "type": "Pharmacy College",
-    "office": "0870-2555144",
-    "phoneNumber": "9849058595"
-  },
-  {
     "collegeName": "Vaagdevi College of Pharmacy",
     "address": "2-2-457/3, Ramnagar, Hanamkonda - 506 001",
     "district": "Hanamkonda",
@@ -3017,51 +1513,11 @@
   },
   {
     "collegeName": "Vaagdevi Degree & P.G. College",
-    "address": "Kishanpura, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MCA College",
-    "office": "0870-2455122",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Vaagdevi Degree & P.G. College",
     "address": "Ramnagar, Hanamkonda",
     "district": "Hanamkonda",
     "type": "P.G. College",
     "office": "0870-2455144",
     "phoneNumber": " Not Available"
-  },
-  {
-    "collegeName": "Vaagdevi Degree & P.G. College",
-    "address": "Ramnagar, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "P.G. College",
-    "office": "0870-2455144",
-    "phoneNumber": " Not Available"
-  },
-  {
-    "collegeName": "Vaagdevi Degree & P.G. College",
-    "address": "Kishanpura, Hanamkonda",
-    "district": "Hanamkonda",
-    "type": "MBA College",
-    "office": "0870-2455122",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Vaagdevi Degree College",
-    "address": "Khanapur",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08730-200150",
-    "phoneNumber": "9393859380"
-  },
-  {
-    "collegeName": "Vaagdevi Degree College",
-    "address": "D.No. 13-30/1, Near IB, Mancherial",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-259555",
-    "phoneNumber": "9949708828"
   },
   {
     "collegeName": "Vaagdevi Degree College",
@@ -3088,36 +1544,12 @@
     "phoneNumber": "9849058595"
   },
   {
-    "collegeName": "Vaagdevi Institute of Management Sciences",
-    "address": "Bollikunta, Warangal - 506 005",
-    "district": "Warangal",
-    "type": "MBA College",
-    "office": "0870-2865183",
-    "phoneNumber": "9849058595"
-  },
-  {
     "collegeName": "Vaagdevi Institute of Pharm. Sci",
     "address": "Bollikunta, Warangal - 506 005",
     "district": "Warangal",
     "type": "Pharmacy College",
     "office": "0870-2865146",
     "phoneNumber": "9849058595"
-  },
-  {
-    "collegeName": "Vaagdevi Institute of Pharm. Sci",
-    "address": "Bollikunta, Warangal - 506 005",
-    "district": "Warangal",
-    "type": "Pharmacy College",
-    "office": "0870-2865146",
-    "phoneNumber": "9849058595"
-  },
-  {
-    "collegeName": "Vagdevi Arts & Science Degree College",
-    "address": "H.No. 4-3-41, Opp. New Bus Stand, Bhuktapur, Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-233430",
-    "phoneNumber": "9440069837"
   },
   {
     "collegeName": "Vagdevi Arts & Science Degree College",
@@ -3136,36 +1568,12 @@
     "phoneNumber": "9848682331"
   },
   {
-    "collegeName": "Vasavi Degree College",
-    "address": "Kallur (V), Kuntala (M)",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08734-200222",
-    "phoneNumber": "9848682331"
-  },
-  {
     "collegeName": "Vasundhara Degree College",
     "address": "1-6-252/12, Surya Complex, Industrial Area,Sirpur Khagaznagar - 504 296",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08738-236466",
     "phoneNumber": "9849665901"
-  },
-  {
-    "collegeName": "Vasundhara Degree College",
-    "address": "1-6-252/12, Surya Complex, Industrial Area,Sirpur Khagaznagar - 504 296",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08738-236466",
-    "phoneNumber": "9849665901"
-  },
-  {
-    "collegeName": "Vedhanidhi Degree College",
-    "address": "Lokeshwaram",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9640973808",
-    "phoneNumber": "9848350395"
   },
   {
     "collegeName": "Vedhanidhi Degree College",
@@ -3184,36 +1592,12 @@
     "phoneNumber": "9346752203"
   },
   {
-    "collegeName": "Vevekananda Degree College",
-    "address": "Echoda",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "9885515089",
-    "phoneNumber": "9346752203"
-  },
-  {
     "collegeName": "Vidya Bharathi Degree College",
     "address": "6-64/1, Kistampet, Tandoor,Adilabad Dist.-504 272",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08735-240054",
     "phoneNumber": "9441166900"
-  },
-  {
-    "collegeName": "Vidya Bharathi Degree College",
-    "address": "6-64/1, Kistampet, Tandoor,Adilabad Dist.-504 272",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08735-240054",
-    "phoneNumber": "9441166900"
-  },
-  {
-    "collegeName": "Vidya Jyothi  Degree & PG College",
-    "address": "Station Ghanpur",
-    "district": "Warangal",
-    "type": "MCA College",
-    "office": "Not Available",
-    "phoneNumber": "Not Available"
   },
   {
     "collegeName": "Vidya Jyothi  Degree & PG College",
@@ -3232,36 +1616,12 @@
     "phoneNumber": "9440356485"
   },
   {
-    "collegeName": "Vidya Jyothi Degree & P.G. College",
-    "address": "Station Ghanpur",
-    "district": "Warangal",
-    "type": "P.G. College",
-    "office": "08711-220297",
-    "phoneNumber": "9440356485"
-  },
-  {
     "collegeName": "Vidyarthi Degree College",
     "address": "Ravindranagar, Adilabad",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
     "office": "08732-227042",
     "phoneNumber": "9848982817"
-  },
-  {
-    "collegeName": "Vidyarthi Degree College",
-    "address": "Ravindranagar, Adilabad",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08732-227042",
-    "phoneNumber": "9848982817"
-  },
-  {
-    "collegeName": "Vignana Bharathi Degree College",
-    "address": "Mahabubabad",
-    "district": "Mahabubabad",
-    "type": "P.G. College",
-    "office": "08719-240373",
-    "phoneNumber": "9396720599"
   },
   {
     "collegeName": "Vignana Bharathi Degree College",
@@ -3280,16 +1640,8 @@
     "phoneNumber": "9866143088"
   },
   {
-    "collegeName": "Vikas Degree College",
-    "address": "D.No. 1-119/1, Ponkal, Jannaram (M)",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08739-245322",
-    "phoneNumber": "9866143088"
-  },
-  {
     "collegeName": "Vinutha Institute of Technology & Science",
-    "address": "Hasanparthy (Vil. & Mdl.), Warangal",
+    "address": "Hasanparthy (Vil. & Mdl.)",
     "district": "Warangal",
     "type": "Engineering College",
     "office": "Not Available",
@@ -3300,30 +1652,6 @@
     "address": "Hasanparthy (Vil. & Mdl.), Warangal",
     "district": "Warangal",
     "type": "Engineering College",
-    "office": "Not Available",
-    "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "Vinutha Institute of Technology & Science",
-    "address": "Hasanparthy (Vil. & Mdl.)",
-    "district": "Warangal",
-    "type": "Engineering College",
-    "office": "Not Available",
-    "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "Vinutha Institute of Technology & Science",
-    "address": "Hasanparthy (Vil. & Mdl.)",
-    "district": "Warangal",
-    "type": "Engineering College",
-    "office": "Not Available",
-    "phoneNumber": "9866153134"
-  },
-  {
-    "collegeName": "Vinuthna College of Management",
-    "address": "Hasanparthy",
-    "district": "Warangal",
-    "type": "MBA College",
     "office": "Not Available",
     "phoneNumber": "9866153134"
   },
@@ -3344,36 +1672,12 @@
     "phoneNumber": "9849039699"
   },
   {
-    "collegeName": "Vishwateja College of Pharmacy",
-    "address": "Nirupanagar, Near Waddepally, Hanamkonda - 506 370",
-    "district": "Hanamkonda",
-    "type": "Pharmacy College",
-    "office": "9849165800",
-    "phoneNumber": "9849039699"
-  },
-  {
     "collegeName": "Viswambhara College of Education",
     "address": "Bollikunta",
     "district": "Warangal",
     "type": "College of Education",
     "office": "0870-2865184",
     "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Viswambhara College of Education",
-    "address": "Bollikunta",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "0870-2865184",
-    "phoneNumber": "Not Available"
-  },
-  {
-    "collegeName": "Vivekananda College of Education",
-    "address": "Narsampet",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "Not Available",
-    "phoneNumber": "9346480224"
   },
   {
     "collegeName": "Vivekananda College of Education",
@@ -3392,36 +1696,12 @@
     "phoneNumber": "9347027906"
   },
   {
-    "collegeName": "Vivekananda College of Education Ramnagar",
-    "address": "Mavala (Vill), Adilabad - 504 001",
-    "district": "Adilabad",
-    "type": "Colleges of Education",
-    "office": "9247035121",
-    "phoneNumber": "9347027906"
-  },
-  {
     "collegeName": "Vivekavardhani Degree College",
     "address": "Gundala",
     "district": "Khammam",
     "type": "Degree College",
     "office": "Not Available",
     "phoneNumber": "7702329918"
-  },
-  {
-    "collegeName": "Vivekavardhani Degree College",
-    "address": "Gundala",
-    "district": "Khammam",
-    "type": "Degree College",
-    "office": "Not Available",
-    "phoneNumber": "7702329918"
-  },
-  {
-    "collegeName": "Vivekavardhani Degree College for Women",
-    "address": "Kothagudem",
-    "district": "Bhadradri Kothagudem",
-    "type": "Degree College",
-    "office": "08744-246021",
-    "phoneNumber": "9885916453"
   },
   {
     "collegeName": "Vivekavardhani Degree College for Women",
@@ -3441,22 +1721,6 @@
   },
   {
     "collegeName": "Vivekavardhini Degree College",
-    "address": "Mancherial",
-    "district": "Adilabad",
-    "type": "POST GRADUATE COLLEGE",
-    "office": "08736-259074",
-    "phoneNumber": "9849433053"
-  },
-  {
-    "collegeName": "Vivekavardhini Degree College",
-    "address": "Near Bus Stand, Mancherial-504 208",
-    "district": "Adilabad",
-    "type": "UNDER GRADUATE COLLEGES",
-    "office": "08736-259074",
-    "phoneNumber": "9849433053"
-  },
-  {
-    "collegeName": "Vivekavardhini Degree College",
     "address": "Near Bus Stand, Mancherial-504 208",
     "district": "Adilabad",
     "type": "UNDER GRADUATE COLLEGES",
@@ -3470,22 +1734,6 @@
     "type": "Engineering College",
     "office": "Not Available",
     "phoneNumber": "9391976002"
-  },
-  {
-    "collegeName": "Warangal Institute of Technology & Science",
-    "address": "Oorugonda (V), Althmakur (M), Warangal",
-    "district": "Warangal",
-    "type": "Engineering College",
-    "office": "Not Available",
-    "phoneNumber": "9391976002"
-  },
-  {
-    "collegeName": "Yasmeen B.Ed. College",
-    "address": "Unikicherla",
-    "district": "Warangal",
-    "type": "College of Education",
-    "office": "0870-2520252",
-    "phoneNumber": "9849694650"
   },
   {
     "collegeName": "Yasmeen B.Ed. College",

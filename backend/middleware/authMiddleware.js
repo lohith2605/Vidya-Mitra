@@ -1,17 +1,20 @@
-const jwt = require("jsonwebtoken");
+﻿const jwt = require("jsonwebtoken");
 
 const protect = (
   req,
   res,
   next
 ) => {
-  const token =
-    req.headers.authorization;
+  let token = req.headers.authorization;
 
   if (!token) {
     return res.status(401).json({
       message: "No token",
     });
+  }
+
+  if (token.startsWith("Bearer ")) {
+    token = token.slice(7).trim();
   }
 
   try {
@@ -25,8 +28,7 @@ const protect = (
     next();
   } catch {
     return res.status(401).json({
-      message:
-        "Invalid Token",
+      message: "Invalid Token",
     });
   }
 };

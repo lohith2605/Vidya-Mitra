@@ -58,6 +58,11 @@ const Register = () => {
       );
 
       localStorage.setItem(
+        "vidya_user_token",
+        data.token
+      );
+
+      localStorage.setItem(
         "vidya_username",
         username
       );

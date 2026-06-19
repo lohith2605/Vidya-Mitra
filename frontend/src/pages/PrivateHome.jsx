@@ -1,15 +1,59 @@
-﻿import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PrivateNavbar from "../components/PrivateNavbar";
 
 function PrivateHome() {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
+  const [showProfilePrompt, setShowProfilePrompt] = useState(false);
+  const [forceOpenProfile, setForceOpenProfile] = useState(false);
+  const [profileData, setProfileData] = useState(null);
 
   useEffect(() => {
     if (localStorage.getItem("vidya_user_logged_in") !== "true") {
       navigate("/login");
     }
   }, [navigate]);
+
+  const checkProfile = async () => {
+    const token = localStorage.getItem("vidya_user_token");
+    if (!token) return;
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/profile", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success && data.user) {
+          setProfileData(data.user);
+          const hasNotEdited = !data.user.age && !data.user.courseClass && !data.user.selfDetails && !data.user.fullName;
+          if (hasNotEdited) {
+            setShowProfilePrompt(true);
+          }
+        }
+      }
+    } catch (err) {
+      console.error("Error checking profile:", err);
+    }
+  };
+
+  useEffect(() => {
+    checkProfile();
+  }, []);
+
+  useEffect(() => {
+    const handleProfileUpdate = () => {
+      checkProfile();
+    };
+    window.addEventListener("profileUpdate", handleProfileUpdate);
+    return () => {
+      window.removeEventListener("profileUpdate", handleProfileUpdate);
+    };
+  }, []);
+
+  const displayName = profileData?.fullName || localStorage.getItem("vidya_username") || "User";
 
   return (
 
@@ -28,7 +72,7 @@ function PrivateHome() {
     >
 
       {/* NAVBAR */}
-      <PrivateNavbar />
+      <PrivateNavbar forceOpenProfile={forceOpenProfile} setForceOpenProfile={setForceOpenProfile} />
 
       {/* MAIN CONTENT */}
       <div
@@ -47,6 +91,18 @@ function PrivateHome() {
             animation: "fadeIn 1s ease",
           }}
         >
+
+          {/* GREETING */}
+          <div
+            style={{
+              fontSize: "2.2rem",
+              fontWeight: "600",
+              color: "#4f46e5",
+              marginBottom: "0.5rem",
+            }}
+          >
+            Hey {displayName} 👋
+          </div>
 
           {/* TITLE */}
           <h1
@@ -182,14 +238,16 @@ function PrivateHome() {
             <div
               key={i}
               onClick={() => {
-                if (item.title === "Roadmaps") {
-                  navigate("/roadmaps");
-                } else if (item.title === "Quiz") {
-                  navigate("/quiz");
-                } else if (item.title === "Colleges") {
-                  navigate("/colleges");
-                }
-              }}
+                  if (item.title === "Roadmaps") {
+                    navigate("/roadmaps");
+                  } else if (item.title === "Quiz") {
+                    navigate("/quiz");
+                  } else if (item.title === "Colleges") {
+                    navigate("/colleges");
+                  } else if (item.title === "Career Guidance") {
+                    setShowModal(true);
+                  }
+                }}
               style={{
                 minWidth: "300px",
                 maxWidth: "300px",
@@ -252,6 +310,143 @@ function PrivateHome() {
           ))}
 
         </div>
+
+        {showModal && (
+          <div
+            onClick={(e) => {
+              if (e.target === e.currentTarget) setShowModal(false);
+            }}
+            style={{
+              position: "fixed",
+              inset: 0,
+              display: "grid",
+              placeItems: "center",
+              background: "rgba(0,0,0,0.36)",
+              zIndex: 40,
+            }}
+          >
+            <div
+              role="dialog"
+              aria-modal="true"
+              style={{
+                width: "min(540px,90%)",
+                padding: "26px",
+                borderRadius: "14px",
+                background:
+                  "linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,245,255,0.75))",
+                boxShadow: "0 12px 40px rgba(2,6,23,0.28)",
+                backdropFilter: "blur(8px)",
+                border: "1px solid rgba(255,255,255,0.6)",
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+                <h3 style={{ margin: 0, fontSize: "1.25rem" }}>Ready to begin?</h3>
+                <button onClick={() => setShowModal(false)} style={{ border: "none", background: "transparent", fontSize: "1.1rem", cursor: "pointer" }}>✕</button>
+              </div>
+
+              <p style={{ color: "#374151", marginBottom: 20 }}>
+                Start your journey with Quiz.
+              </p>
+
+              <div style={{ display: "flex", justifyContent: "flex-end", gap: 10 }}>
+                <button
+                  onClick={() => {
+                    setShowModal(false);
+                    navigate("/quiz");
+                  }}
+                  style={{
+                    padding: "10px 16px",
+                    borderRadius: "999px",
+                    border: "none",
+                    background: "linear-gradient(135deg,#6366f1,#8b5cf6)",
+                    color: "#fff",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                  }}
+                >
+                  Quiz
+                </button>
+                <button onClick={() => setShowModal(false)} style={{ padding: "10px 16px", borderRadius: "999px", border: "1px solid rgba(0,0,0,0.06)", background: "#fff", cursor: "pointer" }}>Close</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {showProfilePrompt && (
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              display: "grid",
+              placeItems: "center",
+              background: "rgba(0,0,0,0.36)",
+              zIndex: 35,
+            }}
+          >
+            <div
+              role="dialog"
+              aria-modal="true"
+              style={{
+                width: "min(480px, 90%)",
+                padding: "26px",
+                borderRadius: "16px",
+                background: "linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,245,255,0.85))",
+                boxShadow: "0 12px 40px rgba(2,6,23,0.25)",
+                backdropFilter: "blur(12px)",
+                border: "1px solid rgba(99,102,241,0.2)",
+                fontFamily: "'Inter', sans-serif",
+                color: "#1e293b",
+                textAlign: "left",
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
+                <span style={{ fontSize: "1.75rem" }}>👤</span>
+                <h3 style={{ margin: 0, fontSize: "1.2rem", fontWeight: 700, color: "#0f172a" }}>Complete Your Profile</h3>
+              </div>
+              <p style={{ color: "#475569", fontSize: "0.92rem", lineHeight: "1.5", marginBottom: "1.5rem" }}>
+                Welcome to VidyaMitra! You haven't updated your profile details yet. Let us know your age, course, class, and self details so we can customize your guidance experience.
+              </p>
+              <div style={{ display: "flex", justifyContent: "flex-end", gap: "0.75rem" }}>
+                <button
+                  onClick={() => {
+                    setShowProfilePrompt(false);
+                    setForceOpenProfile(true);
+                  }}
+                  style={{
+                    padding: "10px 20px",
+                    borderRadius: "99px",
+                    border: "none",
+                    background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                    color: "#ffffff",
+                    fontWeight: 700,
+                    fontSize: "0.9rem",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 12px rgba(99, 102, 241, 0.2)",
+                    transition: "transform 0.2s",
+                  }}
+                >
+                  Go to Profile
+                </button>
+                <button
+                  onClick={() => setShowProfilePrompt(false)}
+                  style={{
+                    padding: "10px 20px",
+                    borderRadius: "99px",
+                    border: "1px solid #cbd5e1",
+                    background: "#ffffff",
+                    color: "#64748b",
+                    fontWeight: 600,
+                    fontSize: "0.9rem",
+                    cursor: "pointer",
+                    transition: "background 0.2s",
+                  }}
+                >
+                  Later
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
       </div>
 

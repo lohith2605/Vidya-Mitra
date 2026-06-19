@@ -137,28 +137,11 @@ function Colleges() {
               Discover the right college.
             </h1>
             <p style={{ color: "#475569", fontSize: "1rem", lineHeight: "1.8" }}>
-               Search by college name, district, or Course to see the nearest matches instantly.
+              Search by college name, district, or Course to see the nearest matches instantly.
             </p>
           </div>
 
-          <div
-            style={{
-              minWidth: "280px",
-              borderRadius: "24px",
-              padding: "1.75rem",
-              background: "rgba(255,255,255,0.95)",
-              border: "1px solid rgba(148,163,184,0.16)",
-              boxShadow: "0 20px 40px rgba(15,23,42,0.08)",
-              alignSelf: "center",
-            }}
-          >
-            <p style={{ marginBottom: "0.75rem", fontWeight: 700, color: "#0f172a" }}>
-              Active filters
-            </p>
-            <p style={{ margin: 0, color: "#64748b", fontSize: "0.95rem" }}>
-              {activeFilterCount} filter{activeFilterCount !== 1 ? "s" : ""} applied.
-            </p>
-          </div>
+
         </div>
 
         <div
@@ -330,7 +313,7 @@ function Colleges() {
                 </h2>
               </div>
 
-              
+
             </div>
 
             {loading ? (
