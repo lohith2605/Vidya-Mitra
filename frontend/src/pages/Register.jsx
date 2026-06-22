@@ -85,7 +85,7 @@ const Register = () => {
     <div className="auth-page">
       <div className="auth-container">
 
-        <div className="left-panel">
+        <div className="left-panel register-panel">
           <h1>
             Create Account
           </h1>

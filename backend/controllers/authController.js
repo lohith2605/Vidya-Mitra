@@ -7,15 +7,23 @@ const registerUser = async (req, res) => {
     const { username, email, password } =
       req.body;
 
-    const existingUser =
-      await User.findOne({
-        username,
-      });
+    const existingUsername = await User.findOne({
+      username,
+    });
 
-    if (existingUser) {
+    if (existingUsername) {
       return res.status(400).json({
-        message:
-          "Username already exists",
+        message: "Username already exists",
+      });
+    }
+
+    const existingEmail = await User.findOne({
+      email,
+    });
+
+    if (existingEmail) {
+      return res.status(400).json({
+        message: "Email already exists",
       });
     }
 
@@ -41,6 +49,26 @@ const registerUser = async (req, res) => {
       user,
     });
   } catch (error) {
+    if (
+      error.name === "MongoServerError" &&
+      error.code === 11000
+    ) {
+      const duplicateField =
+        error.keyValue &&
+        Object.keys(error.keyValue)[0];
+      let message = "Duplicate field value";
+
+      if (duplicateField === "email") {
+        message = "Email already exists";
+      } else if (duplicateField === "username") {
+        message = "Username already exists";
+      }
+
+      return res.status(400).json({
+        message,
+      });
+    }
+
     res.status(500).json({
       message: error.message,
     });
