@@ -37,9 +37,9 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹3.6 - ₹6.5 LPA", mid: "₹8 - ₹15 LPA", senior: "₹18 - ₹40L+ LPA", abroad: "High demand in USA, Germany, UK ($80k - $140k+)" },
     resources: [
-      { type: "YouTube", name: "Gate Smashers", link: "#", cost: "Free" },
-      { type: "Course", name: "NPTEL Technical Lectures", link: "#", cost: "Free" },
-      { type: "Practice", name: "GeeksforGeeks Coding", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Gate Smashers", link: "https://www.youtube.com/@GateSmashers", cost: "Free" },
+      { type: "Course", name: "NPTEL Technical Lectures", link: "https://www.youtube.com/@nptelhrd", cost: "Free" },
+      { type: "Practice", name: "GeeksforGeeks Coding", link: "https://www.geeksforgeeks.org/", cost: "Free" }
     ],
     journey: ["10th Grade", "MPC Stream (Inter)", "JEE/EAMCET Exam", "B.Tech Graduation", "Internship", "Design Engineer"],
     tips: [
@@ -85,8 +85,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹6 - ₹9 LPA", mid: "₹12 - ₹20 LPA", senior: "₹24 - ₹50L+ LPA", abroad: "Very High demand. Requires passing local exams (USMLE for USA, PLAB for UK)." },
     resources: [
-      { type: "YouTube", name: "Osmosis Medical Education", link: "#", cost: "Free" },
-      { type: "Course", name: "Prepladder / Marrow PG Prep", link: "#", cost: "Paid" }
+      { type: "YouTube", name: "Osmosis Medical Education", link: "https://www.youtube.com/@osmosis", cost: "Free" },
+      { type: "Course", name: "Prepladder / Marrow PG Prep", link: "https://www.prepladder.com/", cost: "Paid" }
     ],
     journey: ["10th Grade", "BiPC Stream (Inter)", "NEET UG Exam", "MBBS College", "1-Year Rotatory Internship", "MD/MS Specialization"],
     tips: [
@@ -131,7 +131,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹1.8 - ₹3 LPA", mid: "₹4 - ₹6 LPA", senior: "₹7 - ₹10 LPA", abroad: "Moderate opportunities in Gulf countries and industrial zones." },
     resources: [
-      { type: "Course", name: "Swayam Vocational Courses", link: "#", cost: "Free" }
+      { type: "Course", name: "Swayam Vocational Courses", link: "https://swayam.gov.in/", cost: "Free" }
     ],
     journey: ["10th Grade", "Diploma Admission", "Niche Selection", "Practical Workshops", "Final Year Design Project", "Associate Job"],
     tips: [
@@ -177,7 +177,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹2.2 - ₹3.5 LPA", mid: "₹4.5 - ₹7 LPA", senior: "₹8 - ₹12 LPA", abroad: "High demand in Canada, Australia, and Middle East for skilled technicians." },
     resources: [
-      { type: "YouTube", name: "Learn Engineering", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Learn Engineering", link: "https://www.youtube.com/@Lesics", cost: "Free" }
     ],
     journey: ["10th Grade", "POLYCET Exam", "Diploma (Mechanical/EEE/ECE)", "Industrial Training", "ECET Lateral Entry", "Junior Engineer"],
     tips: [
@@ -223,8 +223,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹3 - ₹5.5 LPA", mid: "₹7 - ₹12 LPA", senior: "₹14 - ₹25L+ LPA", abroad: "Very limited (restricted to foreign services or embassies)." },
     resources: [
-      { type: "YouTube", name: "WiFi Study / Adda247", link: "#", cost: "Free" },
-      { type: "App", name: "Testbook Exam Prep", link: "#", cost: "Free/Paid" }
+      { type: "YouTube", name: "WiFi Study / Adda247", link: "https://www.youtube.com/@Wifistudy", cost: "Free" },
+      { type: "App", name: "Testbook Exam Prep", link: "https://testbook.com/", cost: "Free/Paid" }
     ],
     journey: ["10th / Inter", "Exam Target Selection", "Daily GK & Quant Prep", "SSC / Railway Exams", "Prelims & Mains", "Government Employee"],
     tips: [
@@ -271,8 +271,8 @@ export const roadmapsData = [
     salaryInsights: { fresher: "₹4.5 - ₹7.5 LPA", mid: "₹9 - ₹18 LPA", senior: "₹20 - ₹45L+ LPA", abroad: "Very High. Remote freelance ($50 - $120/hr) or abroad roles ($90k - $160k)" },
     resources: [
       { type: "YouTube", name: "freeCodeCamp.org", link: "https://www.youtube.com/c/freecodecamp", cost: "Free" },
-      { type: "Course", name: "Full Stack Open (University of Helsinki)", link: "#", cost: "Free" },
-      { type: "Practice", name: "Frontend Mentor", link: "#", cost: "Free" }
+      { type: "Course", name: "Full Stack Open (University of Helsinki)", link: "https://fullstackopen.com/en/", cost: "Free" },
+      { type: "Practice", name: "Frontend Mentor", link: "https://www.frontendmentor.io/", cost: "Free" }
     ],
     journey: ["10th / Inter", "Web Basics (HTML/CSS/JS)", "React Framework", "Node.js & Express APIs", "Full Stack Portfolio", "Software Engineer"],
     tips: [
@@ -318,8 +318,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹6 - ₹9 LPA", mid: "₹12 - ₹22 LPA", senior: "₹25 - ₹55L+ LPA", abroad: "Highest paying technology branch internationally ($110k - $200k+)" },
     resources: [
-      { type: "YouTube", name: "Sentdex Python ML", link: "#", cost: "Free" },
-      { type: "Course", name: "Machine Learning by Andrew Ng", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Sentdex Python ML", link: "https://www.youtube.com/@sentdex", cost: "Free" },
+      { type: "Course", name: "Machine Learning by Andrew Ng", link: "https://www.coursera.org/specializations/machine-learning-introduction", cost: "Free" }
     ],
     journey: ["MPC / inter", "Python & Pandas", "Statistics & Linear Algebra", "Supervised ML Models", "Deep Learning / PyTorch", "AI Specialist"],
     tips: [
@@ -365,8 +365,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹4 - ₹6.5 LPA", mid: "₹9 - ₹16 LPA", senior: "₹18 - ₹35L+ LPA", abroad: "High global demand, particularly in Europe, North America, and banking sectors." },
     resources: [
-      { type: "YouTube", name: "NetworkChuck", link: "#", cost: "Free" },
-      { type: "Practice", name: "PortSwigger Web Security Academy", link: "#", cost: "Free" }
+      { type: "YouTube", name: "NetworkChuck", link: "https://www.youtube.com/@NetworkChuck", cost: "Free" },
+      { type: "Practice", name: "PortSwigger Web Security Academy", link: "https://portswigger.net/web-security", cost: "Free" }
     ],
     journey: ["10th / Inter", "Computer Networking", "Linux & Shell Operations", "Vulnerability Assessment", "TryHackMe / Security+", "Ethical Hacker"],
     tips: [
@@ -412,8 +412,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹5 - ₹8 LPA", mid: "₹10 - ₹18 LPA", senior: "₹20 - ₹45L+ LPA", abroad: "Very High. High demand across all major tech hubs globally ($95k - $160k)." },
     resources: [
-      { type: "YouTube", name: "StatQuest with Josh Starmer", link: "#", cost: "Free" },
-      { type: "Course", name: "Kaggle Micro-courses", link: "#", cost: "Free" }
+      { type: "YouTube", name: "StatQuest with Josh Starmer", link: "https://www.youtube.com/@statquest", cost: "Free" },
+      { type: "Course", name: "Kaggle Micro-courses", link: "https://www.kaggle.com/learn", cost: "Free" }
     ],
     journey: ["10th / Inter", "Python & SQL Fundamentals", "Probability & Statistics", "Data Vis & Dashboards", "Predictive ML Modeling", "Data Scientist"],
     tips: [
@@ -458,8 +458,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹3.5 - ₹6 LPA", mid: "₹7.5 - ₹13 LPA", senior: "₹15 - ₹28L+ LPA", abroad: "High demand. Remote freelance opportunities are highly lucrative ($40 - $90/hr)." },
     resources: [
-      { type: "YouTube", name: "Figma Official Tutorials", link: "#", cost: "Free" },
-      { type: "Course", name: "Interaction Design Foundation", link: "#", cost: "Paid" }
+      { type: "YouTube", name: "Figma Official Tutorials", link: "https://www.youtube.com/@Figma", cost: "Free" },
+      { type: "Course", name: "Interaction Design Foundation", link: "https://www.interaction-design.org/", cost: "Paid" }
     ],
     journey: ["10th / Inter", "Design Core Concepts", "Figma Design Tool", "UX User Testing", "UX Case Studies Portfolio", "Product UI/UX Designer"],
     tips: [
@@ -505,8 +505,8 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹2.5 - ₹4.5 LPA", mid: "₹6 - ₹10 LPA", senior: "₹12 - ₹22L+ LPA", abroad: "Very popular domain for digital nomad lifestyles and remote client contracts." },
     resources: [
-      { type: "YouTube", name: "Neil Patel Marketing", link: "#", cost: "Free" },
-      { type: "Course", name: "Google Digital Marketing E-learning", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Neil Patel Marketing", link: "https://www.youtube.com/@neilpatel", cost: "Free" },
+      { type: "Course", name: "Google Digital Marketing E-learning", link: "https://grow.google/certificates/digital-marketing-ecommerce/", cost: "Free" }
     ],
     journey: ["10th / Inter", "Marketing Funnels Core", "SEO & Blogging Concepts", "Run Mock Paid Campaigns", "Google Analytics Tracking", "Digital Marketer"],
     tips: [
@@ -551,7 +551,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹7.5 - ₹12 LPA", mid: "₹14 - ₹22 LPA", senior: "₹25 - ₹50L+ LPA", abroad: "Strong presence in Middle East, UK, and multinational firms." },
     resources: [
-      { type: "Course", name: "ICAI Official E-study Materials", link: "#", cost: "Free" }
+      { type: "Course", name: "ICAI Official E-study Materials", link: "https://www.icai.org/post/bos-knowledge-portal", cost: "Free" }
     ],
     journey: ["Inter (CEC/MEC)", "CA Foundation Exam", "CA Intermediate", "2-Year Practical Articleship", "CA Final Exams", "Chartered Accountant"],
     tips: [
@@ -596,7 +596,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹3.5 - ₹7 LPA", mid: "₹8 - ₹15 LPA", senior: "₹18 - ₹35L+ LPA", abroad: "Requires clearing local bar exams (e.g., QLTS for UK, State Bar for USA)." },
     resources: [
-      { type: "YouTube", name: "Legal Edge CLAT Prep", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Legal Edge CLAT Prep", link: "https://www.youtube.com/@LegalEdgeCLAT", cost: "Free" }
     ],
     journey: ["10th / Inter", "CLAT Exam Prep", "National Law School (NLU)", "Court & Firm Internships", "AIBE Exam License", "Practicing Advocate"],
     tips: [
@@ -641,7 +641,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹2.4 - ₹4.2 LPA", mid: "₹5.5 - ₹9.5 LPA", senior: "₹12 - ₹20L+ LPA", abroad: "Very High in major VFX hubs like Canada, New Zealand, UK, and USA." },
     resources: [
-      { type: "YouTube", name: "Blender Guru", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Blender Guru", link: "https://www.youtube.com/@blenderguru", cost: "Free" }
     ],
     journey: ["10th / Inter", "Basic Sketching & Art", "Blender 3D Modeling", "Character Rigging & Motion", "VFX Compositing", "VFX / Lighting Artist"],
     tips: [
@@ -686,7 +686,7 @@ export const roadmapsData = [
     ],
     salaryInsights: { fresher: "₹7 - ₹10 LPA (Starting Basic Pay)", mid: "₹12 - ₹18 LPA", senior: "₹20 - ₹35L+ LPA", abroad: "Diplomatic posting opportunities in international military missions." },
     resources: [
-      { type: "YouTube", name: "Major Kalshi Classes NDA Prep", link: "#", cost: "Free" }
+      { type: "YouTube", name: "Major Kalshi Classes NDA Prep", link: "https://www.youtube.com/@MajorKalshiClasses", cost: "Free" }
     ],
     journey: ["10th Grade", "MPC Stream (Inter)", "UPSC NDA Written Exam", "5-Day SSB Interview", "Cadet Officer Training", "Armed Forces Lieutenant"],
     tips: [

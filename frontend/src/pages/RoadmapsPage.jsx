@@ -1099,6 +1099,8 @@ const RoadmapsPage = () => {
                       <a
                         key={res.name}
                         href={res.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         style={{
                           textDecoration: "none",
                           padding: "1rem",
