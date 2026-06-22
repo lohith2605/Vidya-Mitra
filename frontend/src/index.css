@@ -11,9 +11,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -192,7 +194,7 @@ body {
 .about-card {
   padding: 1.75rem;
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
   border: 1px solid rgba(148, 163, 184, 0.16);
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -275,9 +277,9 @@ body {
 .detail-highlights article {
   padding: 1.35rem;
   border-radius: 20px;
-  background: rgba(255,255,255,0.88);
-  border: 1px solid rgba(148,163,184,0.16);
-  box-shadow: 0 16px 28px rgba(15,23,42,0.05);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.05);
 }
 
 .detail-highlights strong {
@@ -295,6 +297,7 @@ body {
 }
 
 @media (max-width: 720px) {
+
   .about-hero,
   .about-details {
     padding: 1.5rem;
@@ -307,11 +310,90 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Floating Animations for Landing Page */
+@keyframes float-y-1 {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes float-y-2 {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-y-3 {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float-1 {
+  animation: float-y-1 6s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-y-2 7s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-float-3 {
+  animation: float-y-3 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Base style resets for public home */
+.public-home-font {
+  font-family: 'Outfit', 'Inter', -apple-system, sans-serif !important;
+}
+
+/* Smooth transitions */
+.smooth-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .border-right-divider {
+    border-right: 1px solid rgba(99, 102, 241, 0.15) !important;
+  }
 }
