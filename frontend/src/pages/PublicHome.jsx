@@ -142,7 +142,7 @@ function PublicHome() {
               {[
                 {
                   title: "College Match",
-                  subtitle: "See top institutions tailored for your profile.",
+                  subtitle: "See top institutions.",
                   accent: "#c7d2fe",
                 },
                 {

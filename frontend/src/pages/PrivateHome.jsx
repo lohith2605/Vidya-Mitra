@@ -113,7 +113,7 @@ function PrivateHome() {
               color: "#000",
             }}
           >
-            Welcome to VidyaMitra 🎓
+            Welcome to Vidya-Mitra 🎓
           </h1>
 
           {/* DESCRIPTION */}

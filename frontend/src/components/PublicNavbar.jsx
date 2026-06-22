@@ -5,7 +5,7 @@ function PublicNavbar() {
     <nav className="navbar navbar-expand-lg px-4 py-3 bg-white/70 backdrop-blur-lg shadow-sm">
       
       <span className="navbar-brand fw-bold text-xl">
-        VidyaMitra 🎓
+        Vidya-Mitra 🎓
       </span>
 
       <div className="ms-auto d-flex align-items-center gap-3">
