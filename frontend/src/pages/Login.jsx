@@ -100,7 +100,7 @@ const Login = () => {
     <div className="auth-page">
       <div className="auth-container">
 
-        <div className="left-panel">
+        <div className="left-panel login-panel">
           <h1>
             {role === "admin"
               ? "Admin Portal"
@@ -137,7 +137,7 @@ const Login = () => {
                   setRole("user")
                 }
               >
-                👨‍🎓 User
+                User
               </button>
 
               <button
@@ -151,7 +151,7 @@ const Login = () => {
                   setRole("admin")
                 }
               >
-                👨‍💼 Admin
+                 Admin
               </button>
             </div>
 
