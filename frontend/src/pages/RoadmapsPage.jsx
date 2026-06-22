@@ -157,37 +157,18 @@ const RoadmapsPage = () => {
         alignItems: "center"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <Link to="/privatehome" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <span style={{ fontSize: "1.5rem" }}>🎓</span>
             <span style={{
               fontSize: "1.4rem",
-              fontWeight: 800,
-              background: "linear-gradient(135deg, #4f46e5, #7c3aed)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent"
+              fontWeight: 900,
+              color: "#000",
+              lineHeight: 1.1,
             }}>VidyaMitra</span>
           </Link>
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-          <button 
-            onClick={() => {
-              const newMode = !isDarkMode;
-              setIsDarkMode(newMode);
-              localStorage.setItem("vidya_theme_dark", newMode ? "true" : "false");
-            }}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontSize: "1.3rem",
-              padding: "0.5rem"
-            }}
-            title="Toggle Light/Dark Theme"
-          >
-            {isDarkMode ? "☀️" : "🌙"}
-          </button>
-          
           <button
             onClick={() => setShowAIWizard(true)}
             style={{

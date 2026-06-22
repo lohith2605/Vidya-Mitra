@@ -188,12 +188,10 @@ function QuizPage() {
         // Welcome Screen
         return (
           <div style={styles.card}>
-            <div style={styles.badge}>MEMBER AREA</div>
             <h2 style={styles.cardTitle}>Career Assessment 🧠</h2>
             <p style={styles.cardDesc}>
               Discover the career path that best matches your interests, skills, strengths, and goals. 
-              Our smart algorithm evaluates your academic preferences and career goals to map out 
-              your next educational steps.
+              
             </p>
             <div style={styles.statsContainer}>
               <div style={styles.statItem}>
@@ -301,7 +299,7 @@ function QuizPage() {
           </div>
         );
 
-      case 3:
+      case 3: {
         // Quiz Questions Screen
         if (questions.length === 0) return null;
         const currentQuestion = questions[currentQuestionIndex];
@@ -392,8 +390,8 @@ function QuizPage() {
             </div>
           </div>
         );
-
-      case 4:
+      }
+      case 4:{
         // Review Screen
         const totalQ = questions.length;
         const answeredQ = getAnsweredCount();
@@ -458,7 +456,7 @@ function QuizPage() {
               </button>
             </div>
           </div>
-        );
+        ); }
 
       case 5:
         // Success Screen
