@@ -190,7 +190,7 @@ function PublicHome() {
               {
                 title: "College Insights",
                 desc: "Compare programs, fees, and placement data quickly.",
-                icon: "🏫",
+                icon: "🏛️",
               },
             
             ].map((card) => (

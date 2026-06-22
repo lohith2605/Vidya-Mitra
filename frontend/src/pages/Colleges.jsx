@@ -4,10 +4,9 @@ import PrivateNavbar from "../components/PrivateNavbar";
 import { fetchCollegeFilters, fetchColleges } from "../services/collegeService";
 
 function Colleges() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const queryParam = searchParams.get("search") || "";
 
-  const [searchTerm, setSearchTerm] = useState(queryParam);
   const [districtOptions, setDistrictOptions] = useState([]);
   const [typeOptions, setTypeOptions] = useState([]);
   const [selectedDistricts, setSelectedDistricts] = useState([]);
@@ -15,10 +14,7 @@ function Colleges() {
   const [colleges, setColleges] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
-  useEffect(() => {
-    setSearchTerm(queryParam);
-  }, [queryParam]);
+  const [selectedCollege, setSelectedCollege] = useState(null);
 
   useEffect(() => {
     const loadFilters = async () => {
@@ -53,17 +49,6 @@ function Colleges() {
     loadColleges();
   }, [queryParam, selectedDistricts, selectedTypes]);
 
-  useEffect(() => {
-    if (
-      searchTerm.trim() === "" &&
-      selectedDistricts.length === 0 &&
-      selectedTypes.length === 0 &&
-      queryParam !== ""
-    ) {
-      setSearchParams({});
-    }
-  }, [searchTerm, selectedDistricts, selectedTypes, queryParam, setSearchParams]);
-
   const handleCheckboxChange = (value, current, setter) => {
     if (current.includes(value)) {
       setter(current.filter((item) => item !== value));
@@ -71,22 +56,6 @@ function Colleges() {
       setter([...current, value]);
     }
   };
-
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    const params = new URLSearchParams(searchParams.toString());
-    if (searchTerm.trim()) {
-      params.set("search", searchTerm.trim());
-    } else {
-      params.delete("search");
-    }
-    setSearchParams(params);
-  };
-
-  const activeFilterCount = useMemo(
-    () => selectedDistricts.length + selectedTypes.length + (queryParam ? 1 : 0),
-    [selectedDistricts.length, selectedTypes.length, queryParam]
-  );
 
   return (
     <div
@@ -103,6 +72,7 @@ function Colleges() {
           style={{
             display: "flex",
             justifyContent: "space-between",
+            alignItems: "center",
             flexWrap: "wrap",
             gap: "1.5rem",
             marginBottom: "2rem",
@@ -140,8 +110,6 @@ function Colleges() {
               Search by college name, district, or Course to see the nearest matches instantly.
             </p>
           </div>
-
-
         </div>
 
         <div
@@ -163,56 +131,7 @@ function Colleges() {
               boxShadow: "0 20px 40px rgba(15,23,42,0.06)",
             }}
           >
-            <section style={{ marginBottom: "1.75rem" }}>
-              <h2 style={{ marginBottom: "0.75rem", fontSize: "1.05rem", color: "#111827" }}>
-                Search a college
-              </h2>
-              <form onSubmit={handleSearchSubmit}>
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "0.75rem",
-                    alignItems: "center",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  <input
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Search by college, type, district"
-                    style={{
-                      flex: 1,
-                      minWidth: 0,
-                      padding: "0.95rem 1rem",
-                      borderRadius: "18px",
-                      border: "1px solid rgba(148,163,184,0.2)",
-                      outline: "none",
-                      color: "#0f172a",
-                      background: "rgba(247,250,252,0.9)",
-                    }}
-                  />
-                  <button
-                    type="submit"
-                    style={{
-                      flexShrink: 0,
-                      padding: "0.95rem 1.1rem",
-                      borderRadius: "18px",
-                      border: "none",
-                      background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-                      color: "#fff",
-                      cursor: "pointer",
-                      fontWeight: 700,
-                    }}
-                  >
-                    Go
-                  </button>
-                </div>
-              </form>
-              <p style={{ color: "#475569", fontSize: "0.95rem", margin: 0 }}>
-                Press Enter or click Go to search.
-              </p>
-            </section>
+
 
             <div
               style={{
@@ -379,8 +298,9 @@ function Colleges() {
                       padding: "1.7rem",
                       boxShadow: "0 24px 60px rgba(15,23,42,0.08)",
                       transition: "transform 0.25s ease, box-shadow 0.25s ease",
-                      cursor: "default",
+                      cursor: "pointer",
                     }}
+                    onClick={() => setSelectedCollege(college)}
                     onMouseOver={(e) => {
                       e.currentTarget.style.transform = "translateY(-6px)";
                       e.currentTarget.style.boxShadow = "0 30px 70px rgba(15,23,42,0.12)";
@@ -464,6 +384,162 @@ function Colleges() {
           </section>
         </div>
       </main>
+
+      {selectedCollege && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(15, 23, 42, 0.4)",
+            backdropFilter: "blur(8px)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            animation: "fadeIn 0.25s ease-out",
+          }}
+          onClick={() => setSelectedCollege(null)}
+        >
+          <div
+            style={{
+              background: "#ffffff",
+              borderRadius: "28px",
+              padding: "2.5rem",
+              maxWidth: "500px",
+              width: "90%",
+              boxShadow: "0 30px 70px rgba(15, 23, 42, 0.15)",
+              border: "1px solid rgba(148, 163, 184, 0.15)",
+              position: "relative",
+              animation: "slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedCollege(null)}
+              style={{
+                position: "absolute",
+                top: "1.5rem",
+                right: "1.5rem",
+                border: "none",
+                background: "rgba(99, 102, 241, 0.08)",
+                color: "#6366f1",
+                width: "36px",
+                height: "36px",
+                borderRadius: "50%",
+                fontSize: "1.1rem",
+                cursor: "pointer",
+                display: "grid",
+                placeItems: "center",
+                transition: "background 0.2s, transform 0.2s",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = "rgba(99, 102, 241, 0.16)";
+                e.currentTarget.style.transform = "scale(1.05)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = "rgba(99, 102, 241, 0.08)";
+                e.currentTarget.style.transform = "scale(1)";
+              }}
+            >
+              ✕
+            </button>
+
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "56px",
+                height: "56px",
+                borderRadius: "20px",
+                background: "rgba(99,102,241,0.12)",
+                color: "#4338ca",
+                fontSize: "1.5rem",
+                marginBottom: "1.5rem",
+              }}
+            >
+              🏛️
+            </div>
+
+            <h3
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: 800,
+                color: "#0f172a",
+                lineHeight: "1.3",
+                margin: 0,
+                marginBottom: "1rem",
+              }}
+            >
+              {selectedCollege.collegeName}
+            </h3>
+
+            <div
+              style={{
+                background: "linear-gradient(135deg, rgba(99,102,241,0.03), rgba(139,92,246,0.03))",
+                border: "1px solid rgba(99,102,241,0.08)",
+                borderRadius: "18px",
+                padding: "1.25rem",
+                marginBottom: "1.5rem",
+              }}
+            >
+              <h4
+                style={{
+                  margin: 0,
+                  fontSize: "0.8rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: "#6366f1",
+                  marginBottom: "0.5rem",
+                  fontWeight: 700,
+                }}
+              >
+                Address
+              </h4>
+              <p
+                style={{
+                  margin: 0,
+                  color: "#334155",
+                  fontSize: "0.98rem",
+                  lineHeight: "1.6",
+                }}
+              >
+                {selectedCollege.address}
+              </p>
+            </div>
+
+            <button
+              onClick={() => setSelectedCollege(null)}
+              style={{
+                width: "100%",
+                padding: "0.95rem",
+                borderRadius: "16px",
+                border: "none",
+                background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+                color: "#fff",
+                cursor: "pointer",
+                fontWeight: 700,
+                fontSize: "0.95rem",
+                boxShadow: "0 10px 20px rgba(99, 102, 241, 0.15)",
+                transition: "transform 0.2s, box-shadow 0.2s",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "0 14px 28px rgba(99, 102, 241, 0.25)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "0 10px 20px rgba(99, 102, 241, 0.15)";
+              }}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

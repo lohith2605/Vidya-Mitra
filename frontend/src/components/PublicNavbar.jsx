@@ -16,6 +16,7 @@ function PublicNavbar() {
         {/* About */}
         <Link
           to="/about"
+          state={{ from: "/" }}
           className="px-4 py-2 rounded-pill text-white fw-medium"
           style={{
             color: "white",

@@ -181,7 +181,7 @@ function PrivateHome() {
                 transition: "0.3s ease",
                 whiteSpace: "nowrap",
               }}
-              onClick={() => navigate("/about")}
+              onClick={() => navigate("/about", { state: { from: "/privatehome" } })}
               onMouseOver={(e) => {
                 e.target.style.transform = "translateY(-2px)";
                 e.target.style.background = "#eef2ff";
